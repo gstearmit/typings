@@ -1,0 +1,459 @@
+<div class="backend-content">
+    <div class="be-tabs">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a data-target="#all" role="tab" data-toggle="tab">All order</a></li>
+            <li role="presentation"><a data-target="#paid" role="tab" data-toggle="tab">Paid</a></li>
+            <li role="presentation"><a data-target="#unpaid" role="tab" data-toggle="tab">Unpaid</a></li>
+            <li role="presentation"><a data-target="#shipped" role="tab" data-toggle="tab">Shipped</a></li>
+            <li role="presentation"><a data-target="#cancel" role="tab" data-toggle="tab">Cancelled Orders</a></li>
+        </ul>
+    </div>
+    <div class="be-tab-content tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="all">
+            <div class="item-filter">
+                <div class="item-numb"><b>Total:</b> $12,090/457 orders</div>
+                <div class="filter">
+                    <div class="search-order" data-toggle="modal" data-target="#filter">
+                        <span>Search Order</span>
+                        <i class="search-ico"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item-list">
+                <div class="list-head">
+                    <div class="left">
+                        <div class="order-info">
+                            <b>ORDER</b>
+                            <a ng-href="/">#12345</a>
+                        </div>
+                        <div class="info">05/01/16  |  2.460.000 VND</div>
+                    </div>
+                    <div class="right">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default">Pay this Order</button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="item">
+                            <div class="top">
+                                <div class="thumb">
+                                    <div class="img"><span><img src="assets/img/ws-pd.jpg" alt="" title=""/></span></div>
+                                </div>
+                                <div class="info">
+                                    <div class="box1">
+                                        <div class="name">Axist Men's Quarter Zip Long...</div>
+                                        <div class="action">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span>More</span>
+                                                    <i class="fa fa-caret-down"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box2">
+                                        <div class="desc">Blue, M, New</div>
+                                        <div class="price">1.200.000 VND</div>
+                                        <div class="tag-box">
+                                            <span class="tag grey">Paid</span>
+                                            <span class="tag grey">Not shipped</span>
+                                            <span class="tag grey">Wait for approval</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pay-box">
+                                <div class="alert-box">
+                                    <b>Alert:</b> Pay now to avoid increasing price and out-of-stock
+                                </div>
+                                <div class="pay">
+                                    <button type="button" class="btn btn-default">Contact WeShop</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="top">
+                                <div class="thumb">
+                                    <div class="img"><span><img src="assets/img/ws-pd.jpg" alt="" title=""/></span></div>
+                                </div>
+                                <div class="info">
+                                    <div class="box1">
+                                        <div class="name">Axist Men's Quarter Zip Long...</div>
+                                        <div class="action">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span>More</span>
+                                                    <i class="fa fa-caret-down"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box2">
+                                        <div class="desc">Blue, M, New</div>
+                                        <div class="price">1.200.000 VND</div>
+                                        <div class="tag-box">
+                                            <span class="tag grey">Paid</span>
+                                            <span class="tag grey">Not shipped</span>
+                                            <span class="tag grey">Wait for approval</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pay-box">
+                                <div class="alert-box">
+                                    <b>Alert:</b> Paid, please wait for WeShop's approval
+                                </div>
+                                <div class="pay">
+                                    <button type="button" class="btn btn-default">Contact WeShop</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="item-list">
+                <div class="list-head">
+                    <div class="left">
+                        <div class="order-info">
+                            <b>ORDER</b>
+                            <a ng-href="/">#12345</a>
+                        </div>
+                        <div class="info">05/01/16  |  2.460.000 VND</div>
+                    </div>
+                    <div class="right">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default">Track Order</button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="item">
+                            <div class="top">
+                                <div class="thumb">
+                                    <div class="img"><span><img src="assets/img/ws-pd.jpg" alt="" title=""/></span></div>
+                                </div>
+                                <div class="info">
+                                    <div class="box1">
+                                        <div class="name">Axist Men's Quarter Zip Long...</div>
+                                        <div class="action">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span>More</span>
+                                                    <i class="fa fa-caret-down"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box2">
+                                        <div class="desc">Blue, M, New</div>
+                                        <div class="price">1.200.000 VND</div>
+                                        <div class="tag-box">
+                                            <span class="tag grey">Paid</span>
+                                            <span class="tag grey">Not shipped</span>
+                                            <span class="tag grey">Wait for approval</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pay-box">
+                                <div class="alert-box">
+                                    <b>Alert:</b> Item arrived at WeShop US's warehouse. Est delivery: Fri, Mar 11
+                                </div>
+                                <div class="pay">
+                                    <button type="button" class="btn btn-default">Track item</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="top">
+                                <div class="thumb">
+                                    <div class="img"><span><img src="assets/img/ws-pd.jpg" alt="" title=""/></span></div>
+                                </div>
+                                <div class="info">
+                                    <div class="box1">
+                                        <div class="name">Axist Men's Quarter Zip Long...</div>
+                                        <div class="action">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span>More</span>
+                                                    <i class="fa fa-caret-down"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box2">
+                                        <div class="desc">Blue, M, New</div>
+                                        <div class="price">1.200.000 VND</div>
+                                        <div class="tag-box">
+                                            <span class="tag green">Paid</span>
+                                            <span class="tag blue">Not shipped</span>
+                                            <span class="tag yellow">Wait for approval</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pay-box">
+                                <div class="alert-box">
+                                    <b>Alert:</b> Paid, please wait for WeShop's approval
+                                </div>
+                                <div class="pay">
+                                    <button type="button" class="btn btn-default">Track item</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="item-list">
+                <div class="list-head">
+                    <div class="left">
+                        <div class="order-info">
+                            <b>ORDER</b>
+                            <a ng-href="/">#12345</a>
+                        </div>
+                        <div class="info">05/01/16  |  2.460.000 VND</div>
+                    </div>
+                    <div class="right">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default">Contact WeShop</button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="item">
+                            <div class="top">
+                                <div class="thumb">
+                                    <div class="img"><span><img src="assets/img/ws-pd.jpg" alt="" title=""/></span></div>
+                                </div>
+                                <div class="info">
+                                    <div class="box1">
+                                        <div class="name">Axist Men's Quarter Zip Long...</div>
+                                        <div class="action">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span>More</span>
+                                                    <i class="fa fa-caret-down"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box2">
+                                        <div class="desc">Blue, M, New</div>
+                                        <div class="price">1.200.000 VND</div>
+                                        <div class="tag-box">
+                                            <span class="tag green">Paid</span>
+                                            <span class="tag grey">Not shipped</span>
+                                            <span class="tag red">Order refused</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pay-box">
+                                <div class="alert-box">
+                                    <b>Alert:</b> Paid, but WeShop refused your orders within the following reason: lorem ismpumslkas...
+                                </div>
+                                <div class="pay">
+                                    <button type="button" class="btn btn-default">Contact WeShop</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="item-list">
+                <div class="list-head">
+                    <div class="left">
+                        <div class="order-info">
+                            <b>ORDER</b>
+                            <a ng-href="/">#12345</a>
+                        </div>
+                        <div class="info">05/01/16  |  2.460.000 VND</div>
+                    </div>
+                    <div class="right">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default">Contact WeShop</button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="item">
+                            <div class="top">
+                                <div class="thumb">
+                                    <div class="img"><span><img src="assets/img/ws-pd.jpg" alt="" title=""/></span></div>
+                                </div>
+                                <div class="info">
+                                    <div class="box1">
+                                        <div class="name">Axist Men's Quarter Zip Long...</div>
+                                        <div class="action">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span>More</span>
+                                                    <i class="fa fa-caret-down"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box2">
+                                        <div class="desc">Blue, M, New</div>
+                                        <div class="price">1.200.000 VND</div>
+                                        <div class="tag-box">
+                                            <span class="tag green">Paid</span>
+                                            <span class="tag grey">Not shipped</span>
+                                            <span class="tag yellow">Approved</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pay-box">
+                                <div class="alert-box">
+                                    <b>Alert:</b> Paid, but WeShop refused your orders within the following reason: lorem ismpumslkas...
+                                </div>
+                                <div class="pay">
+                                    <button type="button" class="btn btn-default">Contact WeShop</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="paid">
+
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="unpaid">
+
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="shipped">
+
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="cancel">
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bottom" id="filter">
+    <div class="modal-dialog filter">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="cancel" data-dismiss="modal">
+                    <i class="close-ico"></i>
+                </a>
+                <h4 class="modal-title">Order filter</h4>
+                <a class="submit" data-dismiss="modal">
+                    <i class="submit-ico"></i>
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="filter-block list">
+                    <ul class="fil-list">
+                        <li>
+                            <div class="fil-row" data-dismiss="modal" data-toggle="modal" data-target="#filter-category">
+                                <div class="fil-left">
+                                    <b>Search All Order</b>
+                                </div>
+                                <div class="fil-right">
+                                    <span class="fil-text blue-text">#234-2354534534-34534534</span>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fil-row" data-dismiss="modal" data-toggle="modal" data-target="#filter-brand">
+                                <div class="fil-left">
+                                    <b>Order Status</b>
+                                </div>
+                                <div class="fil-right">
+                                    <span class="fil-text blue-text">Not paid</span>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fil-row" data-dismiss="modal" data-toggle="modal" data-target="#filter-size">
+                                <div class="fil-left">
+                                    <b>By Time</b>
+                                </div>
+                                <div class="fil-right">
+                                    <span class="fil-text blue-text">7 days</span>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

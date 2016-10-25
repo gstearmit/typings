@@ -1,0 +1,294 @@
+<div class="ws-homepage">
+    <weshop-bigslider images="loadingImagesPromise" class="big-slider"></weshop-bigslider>
+    <div class="buy-from">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" ng-class="{'active': active==1}"><a data-target="#us-store"role="tab" ng-click="tabClick(1)">Buy from USA store</a></li>
+            <li role="presentation" ng-class="{'active': active==2}"><a data-target="#cn-store" role="tab" ng-click="tabClick(2)">Buy from China store</a></li>
+            <li role="presentation" ng-class="{'active': active==3}"><a data-target="#kr-store" role="tab" ng-click="tabClick(3)">Buy from Korea store</a></li>
+        </ul>
+        <div class="tab-content">
+            <div ng-if="active==1" role="tabpanel" class="tab-pane active" id="us-store">
+                <div brand-slider class="brand-slider-us">
+                    <div class="item"><a href="/"><img src="assets/img/brand/adidas.png" alt="" title=""/></a></div>
+                    <div class="item"><a href="/"><img src="assets/img/brand/asics.png" alt="" title=""/></a></div>
+                    <div class="item"><a href="/"><img src="assets/img/brand/diesel.png" alt="" title=""/></a></div>
+                    <div class="item"><a href="/"><img src="assets/img/brand/feeding.png" alt="" title=""/></a></div>
+                    <div class="item"><a href="/"><img src="assets/img/brand/forever21.png" alt="" title=""/></a></div>
+                    <div class="item"><a href="/"><img src="assets/img/brand/hm.png" alt="" title=""/></a></div>
+                </div>
+                <div class="see-all">
+                    <a href="/">See All Brands <i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+            <div ng-if="active==2" role="tabpanel" class="tab-pane active" id="cn-store">
+                <div brand-slider class="brand-slider-cn" active="active">
+                    <div class="item"><a href="/"><img src="assets/img/brand/adidas.png" alt="" title=""/></a></div>
+                    <div class="item"><a href="/"><img src="assets/img/brand/asics.png" alt="" title=""/></a></div>
+                    <div class="item"><a href="/"><img src="assets/img/brand/diesel.png" alt="" title=""/></a></div>
+                    <div class="item"><a href="/"><img src="assets/img/brand/feeding.png" alt="" title=""/></a></div>
+                    <div class="item"><a href="/"><img src="assets/img/brand/forever21.png" alt="" title=""/></a></div>
+                    <div class="item"><a href="/"><img src="assets/img/brand/hm.png" alt="" title=""/></a></div>
+                </div>
+                <div class="see-all">
+                    <a href="/">See All Brands <i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+            <div ng-if="active==3" role="tabpanel" class="tab-pane active" id="kr-store">
+                <div brand-slider class="brand-slider-kr" active="active">
+                    <div class="item"><a href="/"><img src="assets/img/brand/adidas.png" alt="" title=""/></a></div>
+                    <div class="item"><a href="/"><img src="assets/img/brand/asics.png" alt="" title=""/></a></div>
+                    <div class="item"><a href="/"><img src="assets/img/brand/diesel.png" alt="" title=""/></a></div>
+                    <div class="item"><a href="/"><img src="assets/img/brand/feeding.png" alt="" title=""/></a></div>
+                    <div class="item"><a href="/"><img src="assets/img/brand/forever21.png" alt="" title=""/></a></div>
+                    <div class="item"><a href="/"><img src="assets/img/brand/hm.png" alt="" title=""/></a></div>
+                </div>
+                <div class="see-all">
+                    <a href="/">See All Brands <i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="help-me">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a data-target="#help-me-buy"role="tab" data-toggle="tab">Help me buy</a></li>
+            <li role="presentation"><a data-target="#help-me-ship" role="tab" data-toggle="tab">Help me ship</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane in active" id="help-me-buy">
+                <div class="step-content tab-content">
+                    <div id="buy-step-1" class="tab-pane animated slideInRight in active">
+                        <div class="title">Step 1.</div>
+                        <div class="text">Choose International Shipping Method</div>
+                    </div>
+                    <div id="buy-step-2" class="tab-pane animated slideInRight">
+                        <div class="title">Step 2.</div>
+                        <div class="text">Choose International Shipping Method</div>
+                    </div>
+                    <div id="buy-step-3" class="tab-pane animated slideInRight">
+                        <div class="title">Step 3.</div>
+                        <div class="text">Choose International Shipping Method</div>
+                    </div>
+                    <div id="buy-step-4" class="tab-pane animated slideInRight">
+                        <div class="title">Step 4.</div>
+                        <div class="text">Choose International Shipping Method</div>
+                    </div>
+                </div>
+                <div class="step-icon-box">
+                    <ul class="nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a data-target="#buy-step-1"role="tab" data-toggle="tab">
+                                <i class="step-ico buy-step-1"></i>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a data-target="#buy-step-2"role="tab" data-toggle="tab">
+                                <i class="step-ico buy-step-2"></i>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a data-target="#buy-step-3"role="tab" data-toggle="tab">
+                                <i class="step-ico buy-step-3"></i>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a data-target="#buy-step-4"role="tab" data-toggle="tab">
+                                <i class="step-ico buy-step-4"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="help-me-ship">
+                <div class="step-content tab-content">
+                    <div id="ship-step-1" class="tab-pane animated slideInRight in active">
+                        <div class="title">Step 1.</div>
+                        <div class="text">Choose International Shipping Method</div>
+                    </div>
+                    <div id="ship-step-2" class="tab-pane animated slideInRight">
+                        <div class="title">Step 2.</div>
+                        <div class="text">Choose International Shipping Method</div>
+                    </div>
+                    <div id="ship-step-3" class="tab-pane animated slideInRight">
+                        <div class="title">Step 3.</div>
+                        <div class="text">Choose International Shipping Method</div>
+                    </div>
+                    <div id="ship-step-4" class="tab-pane animated slideInRight">
+                        <div class="title">Step 4.</div>
+                        <div class="text">Choose International Shipping Method</div>
+                    </div>
+                </div>
+                <div class="step-icon-box">
+                    <ul class="nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a data-target="#ship-step-1"role="tab" data-toggle="tab">
+                                <i class="step-ico buy-step-1"></i>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a data-target="#ship-step-2"role="tab" data-toggle="tab">
+                                <i class="step-ico buy-step-2"></i>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a data-target="#ship-step-3"role="tab" data-toggle="tab">
+                                <i class="step-ico buy-step-3"></i>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a data-target="#ship-step-4"role="tab" data-toggle="tab">
+                                <i class="step-ico buy-step-4"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hot-deal">
+        <div class="title wow slideInUp" data-wow-delay="0.2s">
+            <strong>Hot Deals today</strong>
+            <a class="see-all" href="/">See all <i class="fa fa-chevron-right"></i></a>
+        </div>
+        <div class="content wow fadeInUp" data-wow-delay="0.2s">
+            <ul>
+                <li>
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="/ebay/detail"><img src="http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg" alt="" title=""/></a>
+                        </div>
+                        <div class="name"><a href="#">Fitbit Blaze Smart Fitness Watch ...</a></div>
+                        <div class="price">4.853.125 VNĐ</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="/ebay/detail"><img src="http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg" alt="" title=""/></a>
+                        </div>
+                        <div class="name"><a href="#">Fitbit Blaze Smart Fitness Watch ...</a></div>
+                        <div class="price">4.853.125 VNĐ</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="/ebay/detail"><img src="http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg" alt="" title=""/></a>
+                        </div>
+                        <div class="name"><a href="#">Fitbit Blaze Smart Fitness Watch ...</a></div>
+                        <div class="price">4.853.125 VNĐ</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="/ebay/detail"><img src="http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg" alt="" title=""/></a>
+                        </div>
+                        <div class="name"><a href="#">Fitbit Blaze Smart Fitness Watch ...</a></div>
+                        <div class="price">4.853.125 VNĐ</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="portal-feature">
+        <a class="title wow slideInUp" data-wow-delay="0.2s" href="/amazon">
+            <span class="portal-name">Buy from <i class="portal-logo amazon"></i></span>
+            <span class="see-all">See all <i class="fa fa-chevron-right"></i></span>
+        </a>
+        <div class="content">
+            <div class="big-banner wow fadeInUp" data-wow-delay="0.2s" ng-repeat="banner in portalBannerList | filter: {portalBannerId: 1}">
+                <a href="/">
+                    <span class="hide">{{ banner.portalBannerId }}</span>
+                    <img src="{{ banner.portalBannerLink }}" alt="{{ banner.portalBannerName }}" title="{{ banner.portalBannerName }}"/>
+                </a>
+            </div>
+            <ul class="banner-list">
+                <li class="wow fadeInUp" data-wow-delay="0.2s" ng-repeat="banner in amazonBannerList">
+                    <a href="/">
+                        <span class="hide">{{ banner.amzBannerId }}</span>
+                        <img src="{{ banner.amzBannerLink }}" alt="{{ banner.amzBannerName }}" title="{{ banner.amzBannerName }}"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="portal-feature">
+        <a class="title wow slideInUp" data-wow-delay="0.2s" href="/ebay">
+            <span class="portal-name">Buy from <i class="portal-logo ebay"></i></span>
+            <span class="see-all">See all <i class="fa fa-chevron-right"></i></span>
+        </a>
+        <div class="content">
+            <div class="big-banner wow fadeInUp" data-wow-delay="0.2s" ng-repeat="banner in portalBannerList | filter: {portalBannerId: 2}">
+                <a href="/">
+                    <span class="hide">{{ banner.portalBannerId }}</span>
+                    <img src="{{ banner.portalBannerLink }}" alt="{{ banner.portalBannerName }}" title="{{ banner.portalBannerName }}"/>
+                </a>
+            </div>
+            <ul class="banner-list">
+                <li class="wow fadeInUp" data-wow-delay="0.2s" ng-repeat="banner in ebayBannerList">
+                    <a href="/">
+                        <span class="hide">{{ banner.ebayBannerId }}</span>
+                        <img src="{{ banner.ebayBannerLink }}" alt="{{ banner.ebayBannerName }}" title="{{ banner.ebayBannerName }}"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="portal-feature">
+        <a class="title wow slideInUp" data-wow-delay="0.2s" href="/dhgate">
+            <span class="portal-name">Buy from <i class="portal-logo dhgate"></i></span>
+            <span class="see-all">See all <i class="fa fa-chevron-right"></i></span>
+        </a>
+        <div class="content">
+            <div class="big-banner wow fadeInUp" data-wow-delay="0.2s" ng-repeat="banner in portalBannerList | filter: {portalBannerId: 3}">
+                <a href="/">
+                    <span class="hide">{{ banner.portalBannerId }}</span>
+                    <img src="{{ banner.portalBannerLink }}" alt="{{ banner.portalBannerName }}" title="{{ banner.portalBannerName }}"/>
+                </a>
+            </div>
+            <ul class="banner-list">
+                <li class="wow fadeInUp" data-wow-delay="0.2s" ng-repeat="banner in dhgateBannerList">
+                    <a href="/">
+                        <span class="hide">{{ banner.dhgateBannerId }}</span>
+                        <img src="{{ banner.dhgateBannerLink }}" alt="{{ banner.dhgateBannerName }}" title="{{ banner.dhgateBannerName }}"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="recently-view">
+        <a class="title wow slideInUp" data-wow-delay="0.2s" href="/">Recently view <i class="fa fa-chevron-right"></i></a>
+        <div class="content">
+            <ul class="product-list">
+                <li class="wow fadeInUp" data-wow-delay="0.2s" ng-repeat="product in recentlyViewProduct">
+                    <a href="/" class="pd-item">
+                        <div class="thumb">
+                            <span><img src="{{ product.productImageLink }}" alt="" title=""/></span>
+                            <i class="sale-tag">-50%</i>
+                        </div>
+                        <div class="info">
+                            <div class="id hide">{{ product.productId }}</div>
+                            <div class="name">{{ product.productName }}</div>
+                            <div class="price">{{ product.productPrice }} VND</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="loading">
+                <i class="fa fa-spinner fa-pulse fa-2x fa-fw margin-bottom"></i>
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/ng-template" id="weshop/template/slider.template.html">
+    <div data-root-element>
+        <div class="item" ng-repeat="slider in internalImages">
+            <a href="/">
+                <span class="hide">{{ slider.bigSliderId }}</span>
+                <img ng-src="{{ slider.bigSliderLink }}" alt="{{ slider.bigSliderName }}" title="{{ slider.bigSliderName }}"/>
+            </a>
+        </div>
+    </div>
+</script>

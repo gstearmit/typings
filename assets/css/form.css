@@ -1,0 +1,29 @@
+/*Created by nktquan@gmail.com 4/14/16*/
+
+.btn-primary{
+    background: #2c95b5;
+    border-color: #2c95b5;
+    color: #fff;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.btn-primary:hover,
+.btn-primary:focus{
+    background: #2c95b5;
+    border-color: #2c95b5;
+    color: #fff;
+}
+.btn-facebook{
+    background: #3949ab;
+    border-color: #3949ab;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 16px;
+}
+.btn-facebook:hover,
+.btn-facebook:focus{
+    background: #3949ab;
+    border-color: #3949ab;
+    color: #fff;
+}

@@ -4,7 +4,6 @@ namespace frontend\controllers\frontend;
 class HomeController extends BaseController
 {
     public function actionIndex(){ 
-      
        return $this->render('index',[]);
     }
     

@@ -1,7 +1,4 @@
 <?php
 return [
-    'cache' => [
-        'enable' => true,
-        'duration' => 1200,
-    ]
+    'adminEmail' => 'admin@example.com',
 ];

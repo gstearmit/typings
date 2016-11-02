@@ -1,0 +1,130 @@
+<div class="ws-header ws-header-2 ws-search">
+    <span class="menu-toggle" ng-click="openMenuToggle();"></span>
+    <div class="ws-header-4">
+        <a onclick="javascript:history.go(-1);" class="auth-back-btn"></a>
+        <div class="search-box" data-toggle="modal" data-target="#search">
+            <form ng-submit="find(search.keyword)">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-default"><i class="search-icon"></i></button>
+                    </span>
+                    <input type="text" class="form-control" ng-model="search.keyword" placeholder="Search or Paste product URL">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="ws-right-nav">
+        <ul>
+            <li><a href="/checkout"><i class="nav-ico cart"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="modal fade right" id="search">
+    <div class="modal-dialog filter">
+        <div class="modal-content">
+            <div class="modal-header modal-search">
+                <div class="search-box">
+                    <form ng-submit="find(search.keyword)">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-default"><i class="search-icon"></i></button>
+                            </span>
+                            <input type="text" class="form-control" ng-model="search.keyword" placeholder="Search or Paste product URL">
+                        </div>
+                    </form>
+                    <span class="cancel-text" data-dismiss="modal">Cancel</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="search-suggest">
+                    <div class="title">
+                        <span class="text">Recent Searches</span>
+                        <span class="clear">Clear</span>
+                    </div>
+                    <div class="keyword-list">
+                        <ul>
+                            <li>
+                                <span>pandora charms</span>
+                                <i class="fa fa-times-circle"></i>
+                            </li>
+                            <li>
+                                <span>iphone 6s</span>
+                                <i class="fa fa-times-circle"></i>
+                            </li>
+                            <li>
+                                <span>beats</span>
+                                <i class="fa fa-times-circle"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search-suggest member">
+                    <div class="title">
+                        <span class="text">Followed Member</span>
+                    </div>
+                    <div class="keyword-list">
+                        <ul>
+                            <li>
+                                <i class="user-ico"></i>
+                                <span>happycat169168</span>
+                            </li>
+                            <li data-toggle="modal" data-target="#search-type">
+                                <i class="user-ico"></i>
+                                <span>begood-service2</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade right" id="search-type">
+    <div class="modal-dialog filter">
+        <div class="modal-content">
+            <div class="modal-header modal-search">
+                <div class="search-box">
+                    <form ng-submit="find(search.keyword)">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-default"><i class="search-icon"></i></button>
+                            </span>
+                            <input type="text" class="form-control" ng-model="search.keyword" placeholder="Search or Paste product URL">
+                        </div>
+                    </form>
+                    <span class="cancel-text" data-dismiss="modal">Cancel</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="search-suggest">
+                    <div class="keyword-list">
+                        <ul>
+                            <li>
+                                <span>pandora <b>charms</b></span>
+                                <span class="small">in Amazon Store, Ebay Store</span>
+                                <i class="link-ico"></i>
+                            </li>
+                            <li>
+                                <span>pandora <b>charms</b></span>
+                                <span>in Amazon Store, Ebay Store</span>
+                                <i class="link-ico"></i>
+                            </li>
+                            <li>
+                                <span>pandora <b>charms</b></span>
+                                <span class="small">in Amazon Store, Ebay Store</span>
+                                <i class="link-ico"></i>
+                            </li>
+                            <li>
+                                <span>pandora <b>charms</b></span>
+                                <span class="small">in Amazon Store, Ebay Store</span>
+                                <i class="link-ico"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

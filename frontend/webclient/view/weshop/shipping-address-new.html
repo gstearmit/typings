@@ -1,0 +1,257 @@
+<div class="ship-content">
+    <div class="ship-tab-head">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <a data-target="#buyer" role="tab" data-toggle="tab">Buyer info</a>
+            </li>
+            <li role="presentation">
+                <a data-target="#receiver" role="tab" data-toggle="tab">Receiver info</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ship-tab-content tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="buyer">
+            <form class="buyer-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Full name">
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Phone number">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email Address">
+                </div>
+                <div class="form-group" data-toggle="modal" data-target="#country">
+                    <div class="select-option">
+                        <span>Country</span>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="form-group" data-toggle="modal" data-target="#city">
+                    <div class="select-option">
+                        <span>City</span>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="form-group" data-toggle="modal" data-target="#state">
+                    <div class="select-option">
+                        <span>State/Province/Region</span>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Address Line">
+                </div>
+                <div class="checkbox">
+                    <input name="payment" id="receiver-info" type="checkbox">
+                    <label for="receiver-info"></label>
+                    <label for="receiver-info">Use this address for Receiver information</label>
+                </div>
+                <div class="btn-box">
+                    <button type="submit" class="btn btn-default">Save Address</button>
+                </div>
+            </form>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="receiver">
+            <div class="deli-method">
+                <div class="left">
+                    <b>Select Delivery Method</b>
+                </div>
+                <div class="right">
+                    <div class="btn-group">
+                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>To door</span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">To door</a></li>
+                            <li><a href="#">Viettel Post</a></li>
+                            <li><a href="#">Warehouse</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <form class="buyer-form receive">
+                <div class="checkbox">
+                    <input name="payment" id="receiver-info1" type="checkbox">
+                    <label for="receiver-info1"></label>
+                    <label for="receiver-info1">Use this address for Receiver information</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Full name">
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Phone number">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email Address">
+                </div>
+                <div class="form-group" data-toggle="modal" data-target="#country">
+                    <div class="select-option">
+                        <span>Country</span>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="form-group" data-toggle="modal" data-target="#city">
+                    <div class="select-option">
+                        <span>City</span>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="form-group" data-toggle="modal" data-target="#state">
+                    <div class="select-option">
+                        <span>State/Province/Region</span>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Address Line">
+                </div>
+                <div class="btn-box">
+                    <button type="submit" class="btn btn-default">Save Address</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade right" id="country">
+    <div class="modal-dialog filter">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="cancel" data-dismiss="modal">
+                    <i class="back-ico"></i>
+                </a>
+                <h4 class="modal-title">Country</h4>
+            </div>
+            <div class="modal-body">
+                <div class="filter-block list">
+                    <ul class="fil-list sub-2">
+                        <li>
+                            <div class="radio">
+                                <input type="radio" name="buyer" id="ct1">
+                                <label for="ct1"></label>
+                                <label for="ct1">United States</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio">
+                                <input type="radio" name="buyer" id="ct2">
+                                <label for="ct2"></label>
+                                <label for="ct2">Vietnam</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio">
+                                <input type="radio" name="buyer" id="ct3">
+                                <label for="ct3"></label>
+                                <label for="ct3">United Kingdom</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio">
+                                <input type="radio" name="buyer" id="ct4">
+                                <label for="ct4"></label>
+                                <label for="ct4">Malaysia</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade right" id="city">
+    <div class="modal-dialog filter">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="cancel" data-dismiss="modal">
+                    <i class="back-ico"></i>
+                </a>
+                <h4 class="modal-title">City</h4>
+            </div>
+            <div class="modal-body">
+                <div class="filter-block list">
+                    <ul class="fil-list sub-2">
+                        <li>
+                            <div class="radio">
+                                <input type="radio" name="buyer" id="cty1">
+                                <label for="cty1"></label>
+                                <label for="cty1">Hanoi</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio">
+                                <input type="radio" name="buyer" id="cty2">
+                                <label for="cty2"></label>
+                                <label for="cty2">Ho Chi Minh City</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio">
+                                <input type="radio" name="buyer" id="cty3">
+                                <label for="cty3"></label>
+                                <label for="cty3">Da Nang</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio">
+                                <input type="radio" name="buyer" id="cty4">
+                                <label for="cty4"></label>
+                                <label for="cty4">Hai Phong</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade right" id="state">
+    <div class="modal-dialog filter">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="cancel" data-dismiss="modal">
+                    <i class="back-ico"></i>
+                </a>
+                <h4 class="modal-title">State/Province/Region</h4>
+            </div>
+            <div class="modal-body">
+                <div class="filter-block list">
+                    <ul class="fil-list sub-2">
+                        <li>
+                            <div class="radio">
+                                <input type="radio" name="buyer" id="regi1">
+                                <label for="regi1"></label>
+                                <label for="regi1">Long Bien</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio">
+                                <input type="radio" name="buyer" id="regi2">
+                                <label for="regi2"></label>
+                                <label for="regi2">Ba Dinh</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio">
+                                <input type="radio" name="buyer" id="regi3">
+                                <label for="regi3"></label>
+                                <label for="regi3">Hoang Mai</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio">
+                                <input type="radio" name="buyer" id="regi4">
+                                <label for="regi4"></label>
+                                <label for="regi4">Hai Ba Trung</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

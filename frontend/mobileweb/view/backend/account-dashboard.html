@@ -1,0 +1,114 @@
+<div class="account-content">
+    <div class="item-block shop-ship">
+        <div class="item open">
+            <div class="content">
+                <span class="ico ico1"></span>
+                <span class="text">Shop</span>
+                <span class="arrow">
+                    <i class="fa fa-chevron-right"></i>
+                    <i class="fa fa-chevron-down"></i>
+                </span>
+            </div>
+            <div class="sub-content">
+                <ul class="sub-list">
+                    <li><a href="/">Order</a></li>
+                    <li><a href="/">Bidding</a></li>
+                    <li><a href="/">Following</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="item-block shop-ship">
+        <div class="item open">
+            <div class="content">
+                <span class="ico ico2"></span>
+                <span class="text">Ship</span>
+                <span class="arrow">
+                    <i class="fa fa-chevron-right"></i>
+                    <i class="fa fa-chevron-down"></i>
+                </span>
+            </div>
+            <div class="sub-content">
+                <ul class="sub-list">
+                    <li><a href="/">Order</a></li>
+                    <li><a href="/">Bidding</a></li>
+                    <li><a href="/">Following</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="item-block">
+        <ul class="item-list">
+            <li>
+                <a ng-href="/" class="item">
+                    <div class="content">
+                        <span class="ico ico3"></span>
+                        <span class="text">Message</span>
+                        <span class="arrow">
+                            <i class="fa fa-chevron-right"></i>
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a ng-href="/" class="item">
+                    <div class="content">
+                        <span class="ico ico4"></span>
+                        <span class="text">Claim, Return, Refund</span>
+                        <span class="arrow">
+                            <i class="fa fa-chevron-right"></i>
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a ng-href="/" class="item">
+                    <div class="content">
+                        <span class="ico ico5"></span>
+                        <span class="text">Invoices & Payment</span>
+                        <span class="arrow">
+                            <i class="fa fa-chevron-right"></i>
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a ng-href="/" class="item">
+                    <div class="content">
+                        <span class="ico ico6"></span>
+                        <span class="text">Weshop Wallet</span>
+                        <span class="arrow">
+                            <i class="fa fa-chevron-right"></i>
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a ng-href="/" class="item">
+                    <div class="content">
+                        <span class="ico ico7"></span>
+                        <span class="text">Coupon</span>
+                        <span class="arrow">
+                            <i class="fa fa-chevron-right"></i>
+                        </span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="item-block">
+        <a ng-href="/" class="item">
+            <div class="content">
+                <span class="ico ico8"></span>
+                <span class="text">Log out</span>
+            </div>
+        </a>
+    </div>
+</div>
+
+<script>
+    $('.item-block .item .content').click(function () {
+        $(this).parent().find('.sub-content').stop().slideToggle();
+        $(this).parent().toggleClass('open');
+    })
+</script>

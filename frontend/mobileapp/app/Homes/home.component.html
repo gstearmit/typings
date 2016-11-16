@@ -1,0 +1,7 @@
+<ul class="demo-list-icon mdl-list">
+  <li class="mdl-list__item" *ngFor="let comment of comments | async">
+    <span class="mdl-list__item-primary-content">
+        <a [routerLink]="['/', comment.id]">{{comment.author}}</a>
+    </span>
+  </li>
+</ul>

@@ -1,0 +1,22 @@
+<div class="portal-feature">
+    <a class="title wow slideInUp" data-wow-delay="0.2s" href="/amazon">
+        <span class="portal-name">Buy from <i class="portal-logo amazon"></i></span>
+        <span class="see-all">See all <i class="fa fa-chevron-right"></i></span>
+    </a>
+    <div class="content">
+        <div class="big-banner wow fadeInUp" data-wow-delay="0.2s">
+            <a href="/">
+                <span class="hide">{{bannerAmazon.data2.portalBannerId}}</span>
+                <img src="{{bannerAmazon.data2.portalBannerLink}}" alt="{{bannerAmazon.data2.portalBannerName}}" title="{{bannerAmazon.data2.portalBannerName}}}"/>
+            </a>
+        </div>
+        <ul class="banner-list">
+            <li class="wow fadeInUp" data-wow-delay="0.2s" *ngFor="let item of bannerAmazon.data1">
+                <a href="/">
+                    <span class="hide">{{item.amzBannerId}}</span>
+                    <img src="{{item.amzBannerLink}}" alt="{{item.amzBannerName}}" title="{{item.amzBannerName}}"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

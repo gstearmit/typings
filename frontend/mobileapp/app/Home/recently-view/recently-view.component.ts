@@ -1,6 +1,5 @@
 // Imports
 import { Component, OnInit } from '@angular/core';
-import { HomeService } from '../services/home.service'
 @Component({
     moduleId: module.id,
     selector: 'recently-view',
@@ -8,9 +7,6 @@ import { HomeService } from '../services/home.service'
 })
 export class RecentlyViewComponent implements OnInit {
     recentlyView = [];
-    constructor(private homeService: HomeService) {
-
-    }
     ngOnInit() {
         this.loadRecentlyView();
     }

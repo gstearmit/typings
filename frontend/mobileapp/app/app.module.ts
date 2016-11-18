@@ -22,9 +22,8 @@ import { LeftMenuComponent } from './header/left-menu.component';
 import { HeaderAmazonComponent } from './header/amazon/header-amazon.component';
 import { HeaderEbayComponent } from './header/ebay/header-ebay.component';
 
-import { HomeService } from './home/services/home.service';
 import { SliderService } from './slider/services/slider.service';
-import { CommentService } from './slider/services/comment.service';
+import { CommentService } from './home/services/comment.service';
 import { routing } from './app.routes';
 
 @NgModule({
@@ -51,7 +50,6 @@ import { routing } from './app.routes';
     LeftMenuComponent
   ],
   providers: [
-    HomeService,
     SliderService,
     CommentService
   ],

@@ -14,7 +14,7 @@ export class SliderService {
      // Resolve HTTP using the constructor
      constructor (private http: Http) {}
      // private instance variable to hold base url
-     private sliderUrl = 'http://m.demo-ws.com/api/';
+     private sliderUrl = 'http://m.weshop.tech/api/';
      
      // Fetch all existing comments
      getSliders() : Observable<Slider[]>{

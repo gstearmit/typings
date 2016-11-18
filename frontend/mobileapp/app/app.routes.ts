@@ -3,16 +3,13 @@
 // import { provideRouter, RouterConfig } from '@angular/router';
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+import { HomeComponent }    from './home/home.component';
 import { homeRoutes }    from './home/home.routes';
 
 // Route Configuration
 export const routes: Routes = [
-  {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
-  },
+  { path: '', component: HomeComponent },
+  { path: '**', redirectTo: '404'},
   ...homeRoutes
 ];
 

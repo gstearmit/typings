@@ -44,7 +44,17 @@ class ApiController extends Controller
         ];
         return $behaviors;
     }
-
+    public function actionListsliders()
+    {
+        $listImage = new \stdClass();
+        for($i=0; $i<4; $i++){
+             $item = new \stdClass();
+             $item->{'src'} = 'app/common/img/slider'.$i.'.jpg';
+             $item->{'title'} = 'image '.$i;
+             $listImage->{$i} =$item; 
+        }
+        return $listImage;
+    }
     public function actionLogin()
     {
         $data = Yii::$app->getRequest()->getBodyParams();

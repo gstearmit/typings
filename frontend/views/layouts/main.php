@@ -1,30 +1,4 @@
-<?php if($_SERVER['SERVER_NAME']=='m.weshop.tech'): ?>
-<html>
-  <head>
-    <base href="/">
-    <title>Weshop</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Custom Style  -->
-    <link rel="stylesheet" href="app.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.js"></script>
-    <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
-
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('app').catch(function(err){ console.error(err); });
-    </script>
-  </head>
-  <body>
-    <mobile-app>Loading...</mobile-app>
-  </body>
-</html>
-<?php else: ?>
+<?php if($_SERVER['SERVER_NAME']!='m.weshop.tech'): ?>
 <!DOCTYPE html>
 <html lang="en" ng-app="weshopApp">
 <head>
@@ -93,5 +67,31 @@
     <div class="page {{ pageClass }}" ng-view  autoscroll="true"></div>
 
 </body>
+</html>
+<?php else: ?>
+<html>
+  <head>
+    <base href="/">
+    <title>Weshop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Custom Style  -->
+    <link rel="stylesheet" href="app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.js"></script>
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+  <body>
+    <mobile-app>Loading...</mobile-app>
+  </body>
 </html>
 <?php endif; ?>

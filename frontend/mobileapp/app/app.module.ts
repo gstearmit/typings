@@ -23,7 +23,7 @@ import { HeaderAmazonComponent } from './header/amazon/header-amazon.component';
 import { HeaderEbayComponent } from './header/ebay/header-ebay.component';
 
 import { SliderService } from './slider/services/slider.service';
-import { CommentService } from './home/services/comment.service';
+//import { CommentService } from './home/services/comment.service';
 import { routing } from './app.routes';
 
 @NgModule({
@@ -51,7 +51,7 @@ import { routing } from './app.routes';
   ],
   providers: [
     SliderService,
-    CommentService
+    //CommentService
   ],
   bootstrap: [ AppComponent ]
 })

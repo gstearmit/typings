@@ -55,6 +55,21 @@ class ApiController extends Controller
         }
         return $listImage;
     }
+    // get data hot deal
+    public function actionGetdatahotdeal(){
+        $listData = new \stdClass();
+        for($i=0; $i<10; $i++){
+            $item = new \stdClass();
+            $item->{'id'} = $i;
+            $item->{'src'} = 'http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg';
+            $item->{'title'} = 'Fitbit Blaze Smart Fitness Watch ...'.$i;
+            $item->{'price'} = 4853125+$i;
+            $item->{'currency'} = 'VND';
+            $listData->{$i} = $item;
+        }
+        return $listData;
+
+    }
     public function actionLogin()
     {
         $data = Yii::$app->getRequest()->getBodyParams();

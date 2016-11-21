@@ -5,40 +5,13 @@
     </div>
     <div class="content wow fadeInUp" data-wow-delay="0.2s">
         <ul>
-            <li>
+             <li *ngFor="let items of dataHotDeal | async">
                 <div class="item">
                     <div class="thumb">
-                        <a href="/ebay/detail"><img src="http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg" alt="" title=""/></a>
+                        <a href="/ebay/detail"><img src="{{ items.src }}" alt="{{ items.title }}" title="{{ items.title }}"/></a>
                     </div>
-                    <div class="name"><a href="#">Fitbit Blaze Smart Fitness Watch ...</a></div>
-                    <div class="price">4.853.125 VNĐ</div>
-                </div>
-            </li>
-            <li>
-                <div class="item">
-                    <div class="thumb">
-                        <a href="/ebay/detail"><img src="http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg" alt="" title=""/></a>
-                    </div>
-                    <div class="name"><a href="#">Fitbit Blaze Smart Fitness Watch ...</a></div>
-                    <div class="price">4.853.125 VNĐ</div>
-                </div>
-            </li>
-            <li>
-                <div class="item">
-                    <div class="thumb">
-                        <a href="/ebay/detail"><img src="http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg" alt="" title=""/></a>
-                    </div>
-                    <div class="name"><a href="#">Fitbit Blaze Smart Fitness Watch ...</a></div>
-                    <div class="price">4.853.125 VNĐ</div>
-                </div>
-            </li>
-            <li>
-                <div class="item">
-                    <div class="thumb">
-                        <a href="/ebay/detail"><img src="http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg" alt="" title=""/></a>
-                    </div>
-                    <div class="name"><a href="#">Fitbit Blaze Smart Fitness Watch ...</a></div>
-                    <div class="price">4.853.125 VNĐ</div>
+                    <div class="name"><a href="#">{{ items.title }}</a></div>
+                    <div class="price">{{ items.price }} {{ items.currency }}</div>
                 </div>
             </li>
         </ul>

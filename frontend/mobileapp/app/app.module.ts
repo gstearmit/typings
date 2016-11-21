@@ -24,6 +24,7 @@ import { HeaderEbayComponent } from './header/ebay/header-ebay.component';
 
 import { SliderService } from './slider/services/slider.service';
 //import { CommentService } from './home/services/comment.service';
+import { HotdealService } from './home/hot-deal/services/hotdeal.service';
 import { routing } from './app.routes';
 
 @NgModule({
@@ -51,6 +52,7 @@ import { routing } from './app.routes';
   ],
   providers: [
     SliderService,
+	HotdealService
     //CommentService
   ],
   bootstrap: [ AppComponent ]

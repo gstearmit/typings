@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HotdealService } from './services/hotdeal.service'
 
 @Component({
     moduleId: module.id,
@@ -7,5 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class HotDealComponent implements OnInit {
-    ngOnInit() {}
+	public dataHotDeal:{};
+    constructor(private hotdealService: HotdealService) {
+        this.dataHotDeal =  this.hotdealService.getDataHotdeal();
+    }
+    ngOnInit() {
+        this.dataHotDeal =  this.hotdealService.getDataHotdeal();
+    }
 }

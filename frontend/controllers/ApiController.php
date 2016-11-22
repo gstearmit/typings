@@ -80,10 +80,10 @@ class ApiController extends Controller
         $slider->{'price'} = 4853125+1;
         $slider->{'currency'} = 'VND';
         $data['slider'][]   = $slider;
-        for($i=0; $i<5; $i++){
+        for($i=0; $i<4; $i++){
             $item = new \stdClass();
             $item->{'id'} = $i;
-            if($i==0){
+            if($i==0 || $i==1){
                  $item->{'src'} = 'app/common/img/ws-pd-banner.jpg';
             }else{
                  $item->{'src'} = 'app/common/img/ws-pd-banner'.$i.'.jpg';
@@ -98,7 +98,7 @@ class ApiController extends Controller
     }
     // get data amazon box
     public function actionGetdataebaybox(){
-        $data['listimage']=$listData = new \stdClass();
+         $data['listimage']=$listData = new \stdClass();
         $slider = new \stdClass();
         $slider->{'id'} = 1;
         $slider->{'src'} = 'app/common/img/banner-amazon.jpg';
@@ -106,10 +106,10 @@ class ApiController extends Controller
         $slider->{'price'} = 4853125+1;
         $slider->{'currency'} = 'VND';
         $data['slider'][]   = $slider;
-        for($i=0; $i<5; $i++){
+        for($i=0; $i<4; $i++){
             $item = new \stdClass();
             $item->{'id'} = $i;
-            if($i==0 || $i==1 ){
+            if($i==0 || $i==1){
                  $item->{'src'} = 'app/common/img/ws-pd-banner.jpg';
             }else{
                  $item->{'src'} = 'app/common/img/ws-pd-banner'.$i.'.jpg';
@@ -124,7 +124,7 @@ class ApiController extends Controller
     }
     // get data amazon box
     public function actionGetdatadhgatebox(){
-        $data['listimage']=$listData = new \stdClass();
+         $data['listimage']=$listData = new \stdClass();
         $slider = new \stdClass();
         $slider->{'id'} = 1;
         $slider->{'src'} = 'app/common/img/banner-amazon.jpg';
@@ -132,10 +132,10 @@ class ApiController extends Controller
         $slider->{'price'} = 4853125+1;
         $slider->{'currency'} = 'VND';
         $data['slider'][]   = $slider;
-        for($i=0; $i<5; $i++){
+        for($i=0; $i<4; $i++){
             $item = new \stdClass();
             $item->{'id'} = $i;
-            if($i==0){
+            if($i==0 || $i==1){
                  $item->{'src'} = 'app/common/img/ws-pd-banner.jpg';
             }else{
                  $item->{'src'} = 'app/common/img/ws-pd-banner'.$i.'.jpg';

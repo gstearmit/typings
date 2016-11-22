@@ -12,6 +12,9 @@ export class AmazonComponent implements OnInit {
     constructor(private amazonBoxService: AmazonBoxService) {
         this.getData();
     }
+    ngOnInt(){
+        
+    }
     getData(){
         let self = this;
         this.amazonBoxService.getDataAmazonBox().subscribe(function (res) {

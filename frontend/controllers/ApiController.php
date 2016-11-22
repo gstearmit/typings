@@ -109,7 +109,7 @@ class ApiController extends Controller
         for($i=0; $i<5; $i++){
             $item = new \stdClass();
             $item->{'id'} = $i;
-            if($i==0){
+            if($i==0 || $i==1 ){
                  $item->{'src'} = 'app/common/img/ws-pd-banner.jpg';
             }else{
                  $item->{'src'} = 'app/common/img/ws-pd-banner'.$i.'.jpg';

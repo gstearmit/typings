@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { AmazonBoxService } from './services/amazon-box.service'
 @Component({
     moduleId: module.id,
     selector: 'amazon',
@@ -7,41 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class AmazonComponent implements OnInit {
-    bannerAmazon = {data1:[], data2:{}};
-
-    ngOnInit() {
-        this.loadBannerAmazon();
+    public listimage:{};
+    public slider:{};
+    constructor(private amazonBoxService: AmazonBoxService) {
+        this.getData();
     }
-
-    private loadBannerAmazon() {
-        // this.homeService.getBanner();
-        this.bannerAmazon.data1 =[
-            {
-                "amzBannerId" : "1",
-                "amzBannerLink" : "app/common/img/ws-pd-banner.jpg",
-                "amzBannerName" : "Banner test 1"
-            },
-            {
-                "amzBannerId" : "2",
-                "amzBannerLink" : "app/common/img/ws-pd-banner2.jpg",
-                "amzBannerName" : "Banner test 2"
-            },
-            {
-                "amzBannerId" : "3",
-                "amzBannerLink" : "app/common/img/ws-pd-banner3.jpg",
-                "amzBannerName" : "Banner test 3"
-            },
-            {
-                "amzBannerId" : "4",
-                "amzBannerLink" : "app/common/img/ws-pd-banner4.jpg",
-                "amzBannerName" : "Banner test 4"
-            }
-        ];
-        this.bannerAmazon.data2 =
-        {
-            "portalBannerId" : "1",
-            "portalBannerLink" : "app/common/img/banner-amazon.jpg",
-            "portalBannerName" : "Banner test 1"
-        }
+    getData(){
+        let self = this;
+        this.amazonBoxService.getDataAmazonBox().subscribe(function (res) {
+        self.listimage = res.listimage;
+        self.slider    = res.slider;
+     });
     }
 }

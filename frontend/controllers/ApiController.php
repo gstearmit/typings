@@ -70,6 +70,84 @@ class ApiController extends Controller
         return $listData;
 
     }
+    // get data amazon box
+    public function actionGetdataamazonbox(){
+        $data['listimage']=$listData = new \stdClass();
+        $slider = new \stdClass();
+        $slider->{'id'} = 1;
+        $slider->{'src'} = 'app/common/img/banner-amazon.jpg';
+        $slider->{'title'} = 'Fitbit Blaze Smart Fitness Watch ...';
+        $slider->{'price'} = 4853125+1;
+        $slider->{'currency'} = 'VND';
+        $data['slider'][]   = $slider;
+        for($i=0; $i<5; $i++){
+            $item = new \stdClass();
+            $item->{'id'} = $i;
+            if($i==0){
+                 $item->{'src'} = 'app/common/img/ws-pd-banner.jpg';
+            }else{
+                 $item->{'src'} = 'app/common/img/ws-pd-banner'.$i.'.jpg';
+            }
+            $item->{'title'} = 'Fitbit Blaze Smart Fitness Watch ...'.$i;
+            $item->{'price'} = 4853125+$i;
+            $item->{'currency'} = 'VND';
+            $listData->{$i} = $item;
+        }
+        return $data;
+
+    }
+    // get data amazon box
+    public function actionGetdataebaybox(){
+        $data['listimage']=$listData = new \stdClass();
+        $slider = new \stdClass();
+        $slider->{'id'} = 1;
+        $slider->{'src'} = 'app/common/img/banner-amazon.jpg';
+        $slider->{'title'} = 'Fitbit Blaze Smart Fitness Watch ...';
+        $slider->{'price'} = 4853125+1;
+        $slider->{'currency'} = 'VND';
+        $data['slider'][]   = $slider;
+        for($i=0; $i<5; $i++){
+            $item = new \stdClass();
+            $item->{'id'} = $i;
+            if($i==0){
+                 $item->{'src'} = 'app/common/img/ws-pd-banner.jpg';
+            }else{
+                 $item->{'src'} = 'app/common/img/ws-pd-banner'.$i.'.jpg';
+            }
+            $item->{'title'} = 'Fitbit Blaze Smart Fitness Watch ...'.$i;
+            $item->{'price'} = 4853125+$i;
+            $item->{'currency'} = 'VND';
+            $listData->{$i} = $item;
+        }
+        return $data;
+
+    }
+    // get data amazon box
+    public function actionGetdatadhgatebox(){
+        $data['listimage']=$listData = new \stdClass();
+        $slider = new \stdClass();
+        $slider->{'id'} = 1;
+        $slider->{'src'} = 'app/common/img/banner-amazon.jpg';
+        $slider->{'title'} = 'Fitbit Blaze Smart Fitness Watch ...';
+        $slider->{'price'} = 4853125+1;
+        $slider->{'currency'} = 'VND';
+        $data['slider'][]   = $slider;
+        for($i=0; $i<5; $i++){
+            $item = new \stdClass();
+            $item->{'id'} = $i;
+            if($i==0){
+                 $item->{'src'} = 'app/common/img/ws-pd-banner.jpg';
+            }else{
+                 $item->{'src'} = 'app/common/img/ws-pd-banner'.$i.'.jpg';
+            }
+            $item->{'title'} = 'Fitbit Blaze Smart Fitness Watch ...'.$i;
+            $item->{'price'} = 4853125+$i;
+            $item->{'currency'} = 'VND';
+            $listData->{$i} = $item;
+        }
+        return $data;
+
+    }
     public function actionLogin()
     {
         $data = Yii::$app->getRequest()->getBodyParams();

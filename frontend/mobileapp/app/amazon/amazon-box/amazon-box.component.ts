@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { AmazonBoxService } from './services/amazon-box.service';
 import {AmazonBox}          from'./model/amazon-box';
 

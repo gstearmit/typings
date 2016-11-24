@@ -4,11 +4,11 @@ import { FormsModule }    from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { SwiperModule } from 'angular2-useful-swiper';
 
-import { AppComponent }         from './app.component';
+import { AppComponent }       from './app.component';
 import { HomeComponent }      from './home/home.component';
-import { TestComponent }      from './test/test.component';
-import { AmazonComponent }      from './amazon/amazon.component';
+import { AmazonComponent }    from './amazon/amazon.component';
 import { AmazonPortalComponent }      from './amazon/portal/portal.component';
+import { EbayComponent }      from './ebay/ebay.component';
 
 import { BigSliderWeshopComponent } from './slider/big-slider-weshop.component';
 import { BuyFromComponent } from './component-common/brand/buy-from.component';
@@ -37,7 +37,7 @@ import { routing } from './app.routes';
   imports: [
     BrowserModule,
     FormsModule,
-     HttpModule,
+    HttpModule,
     JsonpModule,
     SwiperModule,
     routing
@@ -56,17 +56,9 @@ import { routing } from './app.routes';
     DhgateComponent,
     RecentlyViewComponent,
     LeftMenuComponent,
-<<<<<<< HEAD
-<<<<<<< HEAD
-	TestComponent
-=======
     AmazonPortalComponent,
-    HeaderAmazonComponent
->>>>>>> dac89debe2779ee77f731de4bfaf24350caa01f5
-=======
-    AmazonPortalComponent,
-    HeaderAmazonComponent
->>>>>>> e3c1295527ad033231b4e9a38c77fe7415ef5741
+    HeaderAmazonComponent,
+	EbayComponent
   ],
   providers: [
     SliderService,

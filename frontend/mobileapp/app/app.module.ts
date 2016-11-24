@@ -6,16 +6,18 @@ import { SwiperModule } from 'angular2-useful-swiper';
 
 import { AppComponent }         from './app.component';
 import { HomeComponent }      from './home/home.component';
+import { AmazonComponent }      from './amazon/amazon.component';
+import { AmazonPortalComponent }      from './amazon/portal/portal.component';
 
 
 import { BigSliderWeshopComponent } from './slider/big-slider-weshop.component';
-import { BuyFromComponent } from './home/brand/buy-from.component';
-import { HelpBuyComponent } from './home/help-buy/help-buy.component';
-import { HotDealComponent } from './home/hot-deal/hot-deal.component';
-import { AmazonComponent } from './home/amazon-box/amazon.component';
-import { EbayComponent } from './home/ebay-box/ebay.component';
-import { DhgateComponent } from './home/dhgate-box/dhgate.component';
-import { RecentlyViewComponent } from './home/recently-view/recently-view.component';
+import { BuyFromComponent } from './component-common/brand/buy-from.component';
+import { HelpBuyComponent } from './component-common/help-buy/help-buy.component';
+import { HotDealComponent } from './component-common/hot-deal/hot-deal.component';
+import { AmazonBoxComponent } from './amazon/amazon-box/amazon-box.component';
+import { EbayBoxComponent } from './ebay/ebay-box/ebay-box.component';
+import { DhgateComponent } from './dhgate/dhgate-box/dhgate.component';
+import { RecentlyViewComponent } from './component-common/recently-view/recently-view.component';
 
 import { HeaderWeshopComponent } from './header/header-weshop.component';
 import { LeftMenuComponent } from './header/left-menu.component';
@@ -24,8 +26,11 @@ import { HeaderEbayComponent } from './header/ebay/header-ebay.component';
 
 import { SliderService } from './slider/services/slider.service';
 //import { CommentService } from './home/services/comment.service';
-import { HotdealService } from './home/hot-deal/services/hotdeal.service';
-import { AmazonBoxService } from './home/amazon-box/services/amazon-box.service';
+import { HotdealService } from './component-common/hot-deal/services/hotdeal.service';
+import { AmazonBoxService } from './amazon/amazon-box/services/amazon-box.service';
+import { EbayBoxService } from './ebay/ebay-box/services/ebay-box.service';
+import { DhgateBoxService } from './dhgate/dhgate-box/services/dhgate-box.service';
+import { RecentlyviewService } from './component-common/recently-view/services/recentlyview.service';
 import { routing } from './app.routes';
 
 @NgModule({
@@ -43,18 +48,24 @@ import { routing } from './app.routes';
     HeaderWeshopComponent,
     BigSliderWeshopComponent,
     BuyFromComponent,
+    AmazonBoxComponent,
     HelpBuyComponent,
     HotDealComponent,
     AmazonComponent,
-    EbayComponent,
+    EbayBoxComponent,
     DhgateComponent,
     RecentlyViewComponent,
-    LeftMenuComponent
+    LeftMenuComponent,
+    AmazonPortalComponent,
+    HeaderAmazonComponent
   ],
   providers: [
     SliderService,
-	  HotdealService,
-    AmazonBoxService
+    HotdealService,
+    AmazonBoxService,
+    DhgateBoxService,
+    EbayBoxService,
+    RecentlyviewService
     //CommentService
   ],
   bootstrap: [ AppComponent ]

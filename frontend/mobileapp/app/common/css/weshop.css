@@ -11,7 +11,10 @@
     z-index: 9;
 }
 .search-box{
-    padding-top: 30px;
+    padding-top: 15px;
+}
+.search-box form{
+    margin-bottom: 0;
 }
 .ws-logo{
     position: absolute;

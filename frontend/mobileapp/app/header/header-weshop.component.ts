@@ -11,9 +11,10 @@ declare var $: any;
 export class HeaderWeshopComponent implements OnInit {
     ngOnInit() {}
 
-    // public openMenuToggle() {
-    //     $('.left-menu').addClass('open');
-    //     $('.overlay-bg').show();
-    //     $('.page').css('overflow','hidden');
-    // }
+    public openMenuToggle() {
+        $('.left-menu').addClass('open');
+        $('.overlay-bg').show();
+        $('.page').css('overflow','hidden');
+        document.getElementsByClassName("left-menu").className = "open";
+    }
 }

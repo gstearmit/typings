@@ -6,7 +6,7 @@ import { SwiperModule } from 'angular2-useful-swiper';
 
 import { AppComponent }         from './app.component';
 import { HomeComponent }      from './home/home.component';
-
+import { TestComponent }      from './test/test.component';
 
 import { BigSliderWeshopComponent } from './slider/big-slider-weshop.component';
 import { BuyFromComponent } from './home/brand/buy-from.component';
@@ -49,7 +49,8 @@ import { routing } from './app.routes';
     EbayComponent,
     DhgateComponent,
     RecentlyViewComponent,
-    LeftMenuComponent
+    LeftMenuComponent,
+	TestComponent
   ],
   providers: [
     SliderService,

@@ -57,11 +57,16 @@ import { routing } from './app.routes';
     RecentlyViewComponent,
     LeftMenuComponent,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	TestComponent
 =======
     AmazonPortalComponent,
     HeaderAmazonComponent
 >>>>>>> dac89debe2779ee77f731de4bfaf24350caa01f5
+=======
+    AmazonPortalComponent,
+    HeaderAmazonComponent
+>>>>>>> e3c1295527ad033231b4e9a38c77fe7415ef5741
   ],
   providers: [
     SliderService,

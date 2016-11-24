@@ -13,7 +13,7 @@ html,body{
     right: 0;
     left: 0;
     bottom: 0;
-    padding-top: 152px;
+    padding-top: 137px;
     transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -855,4 +855,9 @@ html,body{
 }
 .big-slider img{
     width: 100%;
+}
+.swiper-container,
+.swiper-wrapper,
+.swiper-slide{
+    height: inherit !important;
 }

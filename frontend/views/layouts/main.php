@@ -1,4 +1,4 @@
-<?php if($_SERVER['SERVER_NAME']!='m.weshop.tech'): ?>
+<?php if($_SERVER['SERVER_NAME']=='m.weshop.tech'): ?>
 <!DOCTYPE html>
 <html lang="en" ng-app="weshopApp">
 <head>

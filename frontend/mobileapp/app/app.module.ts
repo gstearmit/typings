@@ -7,6 +7,7 @@ import { SwiperModule } from 'angular2-useful-swiper';
 import { AppComponent }         from './app.component';
 import { HomeComponent }      from './home/home.component';
 import { AmazonComponent }      from './amazon/amazon.component';
+import { EbayComponent }      from './ebay/ebay.component';
 import { AmazonPortalComponent }      from './amazon/portal/portal.component';
 
 
@@ -57,7 +58,9 @@ import { routing } from './app.routes';
     RecentlyViewComponent,
     LeftMenuComponent,
     AmazonPortalComponent,
-    HeaderAmazonComponent
+    HeaderAmazonComponent,
+    EbayComponent,
+    HeaderEbayComponent
   ],
   providers: [
     SliderService,

@@ -9,6 +9,8 @@ import { HomeComponent }      from './home/home.component';
 import { AmazonComponent }      from './amazon/amazon.component';
 import { EbayComponent }      from './ebay/ebay.component';
 import { AmazonPortalComponent }      from './amazon/portal/portal.component';
+import { AmazonBrowserComponent }      from './amazon/browser/browser.component';
+import { AmazonDetailComponent }      from './amazon/detail/detail.component';
 
 
 import { BigSliderWeshopComponent } from './slider/big-slider-weshop.component';
@@ -60,7 +62,9 @@ import { routing } from './app.routes';
     AmazonPortalComponent,
     HeaderAmazonComponent,
     EbayComponent,
-    HeaderEbayComponent
+    HeaderEbayComponent,
+    AmazonBrowserComponent,
+    AmazonDetailComponent
   ],
   providers: [
     SliderService,

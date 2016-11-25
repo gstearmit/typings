@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DhgateBoxService } from './services/dhgate-box.service';
-import {DhgateBox}          from'./model/dhgate-box';
+import { DhgateBoxService } from 'services/dhgate-box.service';
+import {DhgateBox}          from'model/dhgate-box';
 
 @Component({
     moduleId: module.id,

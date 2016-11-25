@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SliderService } from './services/slider.service'
+import { SliderService } from 'services/slider.service'
 @Component({
     moduleId: module.id,
     selector: 'big-slider-weshop',

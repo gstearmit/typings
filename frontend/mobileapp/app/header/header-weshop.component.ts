@@ -15,6 +15,5 @@ export class HeaderWeshopComponent implements OnInit {
         $('.left-menu').addClass('open');
         $('.overlay-bg').show();
         $('.page').css('overflow','hidden');
-        document.getElementsByClassName("left-menu").className = "open";
     }
 }

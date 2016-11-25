@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HotdealService } from './services/hotdeal.service'
+import { HotdealService } from 'services/hotdeal.service'
 
 @Component({
     moduleId: module.id,

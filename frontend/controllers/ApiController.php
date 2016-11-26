@@ -70,6 +70,22 @@ class ApiController extends Controller
         return $listData;
 
     }
+    // get data recently view
+    public function actionGetdatarecentlyview(){
+        $listDatarecently = new \stdClass();
+        for($i=0; $i<10; $i++){
+            $item = new \stdClass();
+            $item->{'id'} = $i;
+            $item->{'src'} = 'http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/ywwAAOSwZG9Wi~mT/$_1.JPG';
+            $item->{'title'} = 'Product test '.$i;
+            $item->{'price'} = 21708939+$i;
+            $item->{'currency'} = 'VND';
+            $item->{'sale'} = (50+$i).'%';
+            $listDatarecently->{$i} = $item;
+        }
+        return $listDatarecently;
+
+    }
     // get data amazon box
     public function actionGetdataamazonbox(){
         $data['listimage']=$listData = new \stdClass();
@@ -101,7 +117,7 @@ class ApiController extends Controller
          $data['listimage']=$listData = new \stdClass();
         $slider = new \stdClass();
         $slider->{'id'} = 1;
-        $slider->{'src'} = 'app/common/img/banner-amazon.jpg';
+        $slider->{'src'} = 'app/common/img/banner-ebay.jpg';
         $slider->{'title'} = 'Fitbit Blaze Smart Fitness Watch ...';
         $slider->{'price'} = 4853125+1;
         $slider->{'currency'} = 'VND';
@@ -109,11 +125,7 @@ class ApiController extends Controller
         for($i=0; $i<4; $i++){
             $item = new \stdClass();
             $item->{'id'} = $i;
-            if($i==0 || $i==1){
-                 $item->{'src'} = 'app/common/img/ws-pd-banner.jpg';
-            }else{
-                 $item->{'src'} = 'app/common/img/ws-pd-banner'.$i.'.jpg';
-            }
+             $item->{'src'} = 'app/common/img/ws-pd-banner2.jpg';
             $item->{'title'} = 'Fitbit Blaze Smart Fitness Watch ...'.$i;
             $item->{'price'} = 4853125+$i;
             $item->{'currency'} = 'VND';
@@ -127,7 +139,7 @@ class ApiController extends Controller
          $data['listimage']=$listData = new \stdClass();
         $slider = new \stdClass();
         $slider->{'id'} = 1;
-        $slider->{'src'} = 'app/common/img/banner-amazon.jpg';
+        $slider->{'src'} = 'app/common/img/banner-dhgate.jpg';
         $slider->{'title'} = 'Fitbit Blaze Smart Fitness Watch ...';
         $slider->{'price'} = 4853125+1;
         $slider->{'currency'} = 'VND';
@@ -135,11 +147,7 @@ class ApiController extends Controller
         for($i=0; $i<4; $i++){
             $item = new \stdClass();
             $item->{'id'} = $i;
-            if($i==0 || $i==1){
-                 $item->{'src'} = 'app/common/img/ws-pd-banner.jpg';
-            }else{
-                 $item->{'src'} = 'app/common/img/ws-pd-banner'.$i.'.jpg';
-            }
+            $item->{'src'} = 'app/common/img/ws-pd-banner8.jpg';
             $item->{'title'} = 'Fitbit Blaze Smart Fitness Watch ...'.$i;
             $item->{'price'} = 4853125+$i;
             $item->{'currency'} = 'VND';

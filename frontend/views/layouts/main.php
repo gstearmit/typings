@@ -92,7 +92,6 @@
     </script>
   </head>
   <body>
-=======
         <script src="node_modules/zone.js/dist/zone.js"></script>
         <script src="node_modules/reflect-metadata/Reflect.js"></script>
         <script src="node_modules/systemjs/dist/system.src.js"></script>
@@ -107,7 +106,6 @@
         </script>
     </head>
     <body>
->>>>>>> 3db9919ae2d5fec56608d5fa517e5cd664aa6a7b
     <mobile-app>Loading...</mobile-app>
     </body>
     </html>

@@ -1,8 +1,10 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { FormsModule }    from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { SwiperModule } from 'angular2-useful-swiper';
+import { LazyModule } from './lazy/lazy.module';
 
 import { AppComponent }       from './app.component';
 import { HomeComponent }      from './home/home.component';
@@ -40,6 +42,7 @@ import { routing } from './app.routes';
     HttpModule,
     JsonpModule,
     SwiperModule,
+    LazyModule,
     routing
   ],
   declarations: [
@@ -73,4 +76,4 @@ import { routing } from './app.routes';
 })
 export class AppModule {
 }
-
+platformBrowserDynamic().bootstrapModule(AppModule);

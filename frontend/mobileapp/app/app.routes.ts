@@ -11,7 +11,10 @@ import { ebayRoutes }    from './ebay/ebay.routes';
 
 // Route Configuration
 export const routes: Routes = [
+
   { path: '', component: HomeComponent },
+  { path: 'lazy', loadChildren: 'app/lazy/lazy.module#LazyModule' },
+ 
   // { path: '/amazon', component: AmazonPortalComponent },
   // { path: '**', redirectTo: '404'},
   ...homeRoutes,

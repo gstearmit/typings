@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { EbayBoxService } from 'services/ebay-box.service';
-import { EbayBox }          from'model/ebay-box';
+import { EbayBoxService } from './services/ebay-box.service';
+import { EbayBox }          from'./model/ebay-box';
 
 @Component({
     moduleId: module.id,

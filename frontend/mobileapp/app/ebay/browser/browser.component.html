@@ -3,13 +3,26 @@
         <div class="title-3 wow slideInUp" data-wow-delay="0.2s">
             <!--<span class="item-count">{{ count.itemCount | number }} items</span>-->
             <span class="item-count">23,232 items</span>
-            <a data-toggle="modal" data-target="#filter" class="filter">Filter</a>
+            <a class="filter" data-toggle="modal" data-target="#filter">Filter</a>
         </div>
         <div class="content">
             <ul class="product-list">
+                <!--<li class="wow fadeInUp" data-wow-delay="0.2s" ng-repeat="item in items">-->
+                <!--<a ng-href="/ebay/detail" class="pd-item">-->
+                <!--<div class="thumb">-->
+                <!--<i class="bid-tag" ng-if="item.isAution == true" ng-init="bid()">Bidding</i>-->
+                <!--<span><img src="{{ item.image }}" alt="{{ item.title }}" title="{{ item.title }}"/></span>-->
+                <!--</div>-->
+                <!--<div class="info">-->
+                <!--<div class="name">{{ item.title }}</div>-->
+                <!--<div class="price">{{ item.sellPrice | number }} {{ currencyPrice.Name }}</div>-->
+                <!--</div>-->
+                <!--</a>-->
+                <!--</li>-->
                 <li class="wow fadeInUp" data-wow-delay="0.2s">
-                    <a href="/amazon/detail" class="pd-item">
+                    <a [routerLink]="['/ebay/detail']" class="pd-item">
                         <div class="thumb">
+                            <i class="bid-tag"><i class="clock-ico"></i></i>
                             <span><img src="http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg" alt="" title=""/></span>
                         </div>
                         <div class="info">
@@ -18,12 +31,14 @@
                                 <b>4.853.125 VNĐ</b>
                                 <span class="old-price">5.000.000 VND</span>
                             </div>
+                            <div class="time">1d 20h 34s</div>
                         </div>
                     </a>
                 </li>
                 <li class="wow fadeInUp" data-wow-delay="0.2s">
-                    <a href="/amazon/detail" class="pd-item">
+                    <a ng-href="/ebay/detail" class="pd-item">
                         <div class="thumb">
+                            <i class="bid-tag"><i class="clock-ico"></i></i>
                             <span><img src="http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg" alt="" title=""/></span>
                         </div>
                         <div class="info">
@@ -32,12 +47,14 @@
                                 <b>4.853.125 VNĐ</b>
                                 <span class="old-price">5.000.000 VND</span>
                             </div>
+                            <div class="time">1d 20h 34s</div>
                         </div>
                     </a>
                 </li>
                 <li class="wow fadeInUp" data-wow-delay="0.2s">
-                    <a href="/amazon/detail" class="pd-item">
+                    <a ng-href="/ebay/detail" class="pd-item">
                         <div class="thumb">
+                            <i class="bid-tag"><i class="clock-ico"></i></i>
                             <span><img src="http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg" alt="" title=""/></span>
                         </div>
                         <div class="info">
@@ -46,12 +63,14 @@
                                 <b>4.853.125 VNĐ</b>
                                 <span class="old-price">5.000.000 VND</span>
                             </div>
+                            <div class="time">1d 20h 34s</div>
                         </div>
                     </a>
                 </li>
                 <li class="wow fadeInUp" data-wow-delay="0.2s">
-                    <a href="/amazon/detail" class="pd-item">
+                    <a ng-href="/ebay/detail" class="pd-item">
                         <div class="thumb">
+                            <i class="bid-tag"><i class="clock-ico"></i></i>
                             <span><img src="http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg" alt="" title=""/></span>
                         </div>
                         <div class="info">
@@ -60,12 +79,14 @@
                                 <b>4.853.125 VNĐ</b>
                                 <span class="old-price">5.000.000 VND</span>
                             </div>
+                            <div class="time">1d 20h 34s</div>
                         </div>
                     </a>
                 </li>
                 <li class="wow fadeInUp" data-wow-delay="0.2s">
-                    <a href="/amazon/detail" class="pd-item">
+                    <a ng-href="/ebay/detail" class="pd-item">
                         <div class="thumb">
+                            <i class="bid-tag"><i class="clock-ico"></i></i>
                             <span><img src="http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg" alt="" title=""/></span>
                         </div>
                         <div class="info">
@@ -74,12 +95,14 @@
                                 <b>4.853.125 VNĐ</b>
                                 <span class="old-price">5.000.000 VND</span>
                             </div>
+                            <div class="time">1d 20h 34s</div>
                         </div>
                     </a>
                 </li>
                 <li class="wow fadeInUp" data-wow-delay="0.2s">
-                    <a href="/amazon/detail" class="pd-item">
+                    <a ng-href="/ebay/detail" class="pd-item">
                         <div class="thumb">
+                            <i class="bid-tag"><i class="clock-ico"></i></i>
                             <span><img src="http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg" alt="" title=""/></span>
                         </div>
                         <div class="info">
@@ -88,12 +111,14 @@
                                 <b>4.853.125 VNĐ</b>
                                 <span class="old-price">5.000.000 VND</span>
                             </div>
+                            <div class="time">1d 20h 34s</div>
                         </div>
                     </a>
                 </li>
                 <li class="wow fadeInUp" data-wow-delay="0.2s">
-                    <a href="/amazon/detail" class="pd-item">
+                    <a ng-href="/ebay/detail" class="pd-item">
                         <div class="thumb">
+                            <i class="bid-tag"><i class="clock-ico"></i></i>
                             <span><img src="http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg" alt="" title=""/></span>
                         </div>
                         <div class="info">
@@ -102,12 +127,14 @@
                                 <b>4.853.125 VNĐ</b>
                                 <span class="old-price">5.000.000 VND</span>
                             </div>
+                            <div class="time">1d 20h 34s</div>
                         </div>
                     </a>
                 </li>
                 <li class="wow fadeInUp" data-wow-delay="0.2s">
-                    <a href="/amazon/detail" class="pd-item">
+                    <a ng-href="/ebay/detail" class="pd-item">
                         <div class="thumb">
+                            <i class="bid-tag"><i class="clock-ico"></i></i>
                             <span><img src="http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg" alt="" title=""/></span>
                         </div>
                         <div class="info">
@@ -116,6 +143,7 @@
                                 <b>4.853.125 VNĐ</b>
                                 <span class="old-price">5.000.000 VND</span>
                             </div>
+                            <div class="time">1d 20h 34s</div>
                         </div>
                     </a>
                 </li>
@@ -159,8 +187,8 @@
                         </div>
                         <div class="fil-right">
                             <ul class="view">
-                                <li (click)="cateGridView();" data-dismiss="modal"><i class="gridview-ico"></i></li>
-                                <li (click)="cateListView();" data-dismiss="modal"><i class="listview-ico"></i></li>
+                                <li ng-click="cateGridView();" data-dismiss="modal"><i class="gridview-ico"></i></li>
+                                <li ng-click="cateListView();" data-dismiss="modal"><i class="listview-ico"></i></li>
                             </ul>
                         </div>
                     </div>

@@ -3,9 +3,9 @@
 // import { provideRouter, RouterConfig } from '@angular/router';
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent }    from 'home/home.component';
+import { HomeComponent }    from './home/home.component';
 // import { AmazonPortalComponent }    from './amazon/portal/amazon-portal.component';
-import { homeRoutes }    from 'home/home.routes';
+import { homeRoutes }    from './home/home.routes';
 import { amazonRoutes }    from './amazon/amazon.routes';
 import { ebayRoutes }    from './ebay/ebay.routes';
 

@@ -10,16 +10,16 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 
 @Injectable()
-export class SliderService {
+export class EbayDetailImageService {
      // Resolve HTTP using the constructor
      constructor (private http: Http) {}
      // private instance variable to hold base url
-     private sliderUrl = 'http://m.weshop.tech/api/';
+     private sliderUrl = 'http://localhost:5000/api/';
      
      // Fetch all existing comments
-     getSliders() : Observable<Slider[]>{
+     getEbayDetailImage() : Observable<Slider[]>{
          // ...using get request
-         return this.http.get(this.sliderUrl+'listsliders')
+         return this.http.get(this.sliderUrl+'getebaydetailimages')
                         // ...and calling .json() on the response to return data
                          .map((res:Response) => res.json())
                          //...errors if any

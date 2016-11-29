@@ -55,7 +55,7 @@ class ApiController extends Controller
         }
         return $listImage;
     }
-    // get data hot deal
+    // get data hot deal (gach duoi)
     public function actionGetdatahotdeal(){
         $listData = new \stdClass();
         for($i=0; $i<10; $i++){
@@ -63,7 +63,7 @@ class ApiController extends Controller
             $item->{'id'} = $i;
             $item->{'src'} = 'http://i.ebayimg.com/images/g/7isAAOSwiylXBYcB/s-l240.jpg';
             $item->{'title'} = 'Fitbit Blaze Smart Fitness Watch ...'.$i;
-            $item->{'price'} = 4853125+$i;
+            $item->{'price'} = 4855000+$i;
             $item->{'currency'} = 'VND';
             $listData->{$i} = $item;
         }
@@ -156,6 +156,19 @@ class ApiController extends Controller
         return $data;
 
     }
+
+    public function actionGetebaydetailimages()
+    {
+        $listImage = new \stdClass();
+        for($i=0; $i<4; $i++){
+            $item = new \stdClass();
+            $item->{'src'} = 'app/common/img/ebay-detail-pd.jpg';
+            $item->{'title'} = 'image '.$i;
+            $listImage->{$i} =$item;
+        }
+        return $listImage;
+    }
+
     public function actionLogin()
     {
         $data = Yii::$app->getRequest()->getBodyParams();

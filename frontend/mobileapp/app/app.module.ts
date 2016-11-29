@@ -25,6 +25,13 @@ import { DhgateComponent } from './dhgate/dhgate-box/dhgate.component';
 import { RecentlyViewComponent } from './component-common/recently-view/recently-view.component';
 
 import { EbayNavComponent } from './ebay/portal/ebay-nav/ebay-nav.component';
+import { EbayBannerComponent } from './ebay/portal/ebay-banner/ebay-banner.component';
+import { EbayHotdealComponent } from './ebay/portal/ebay-hotdeal/ebay-hotdeal.component';
+import { EbayFeature1Component } from './ebay/portal/ebay-feature1/ebay-feature.component';
+import { EbayFeature2Component } from './ebay/portal/ebay-feature2/ebay-feature.component';
+import { EbayFeature3Component } from './ebay/portal/ebay-feature3/ebay-feature.component';
+import { EbayRecommendationComponent } from './ebay/portal/ebay-recommendation/ebay-recommendation.component';
+import { EbayFootcateComponent } from './ebay/portal/ebay-foot-cate/ebay-foot-cate.component';
 
 import { HeaderWeshopComponent } from './header/header-weshop.component';
 import { LeftMenuComponent } from './header/left-menu.component';
@@ -72,7 +79,14 @@ import { routing } from './app.routes';
     AmazonBrowserComponent,
     AmazonDetailComponent,
     EbayDetailSliderComponent,
-    EbayNavComponent
+    EbayNavComponent,
+    EbayBannerComponent,
+    EbayHotdealComponent,
+    EbayFeature1Component,
+    EbayFeature2Component,
+    EbayFeature3Component,
+    EbayRecommendationComponent,
+    EbayFootcateComponent
   ],
   providers: [
     SliderService,

@@ -13,7 +13,6 @@ import { AppComponent }    from './app.component';
 export const routes: Routes = [
 
   { path: '', component: AppComponent },
-  { path: '', redirectTo: '', pathMatch: 'full' },
   //{ path: 'lazy', loadChildren: 'app/lazy/lazy.module#LazyModule' },
   { path: 'home', loadChildren: 'app/home/home.module#HomeModule' },
   { path: 'ebay', loadChildren: 'app/ebay/ebay.module#EbayModule' },

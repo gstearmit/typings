@@ -1,11 +1,16 @@
-// Imports
-// Deprecated import
-// import { RouterConfig } from '@angular/router';
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { ModuleWithProviders } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent }    from './home.component';
+import { HomeComponent } from './home.component';
 
-// Route Configuration
-export const homeRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
-];
+@NgModule({
+  imports: [
+    RouterModule.forChild([
+      { path: 'home', component: HomeComponent }
+    ])
+  ],
+  exports: [RouterModule]
+})
+
+export class homeRoutes { }

@@ -1,14 +1,12 @@
-// Imports
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-    moduleId: module.id,
-    templateUrl: 'home.component.html'
+	moduleId: module.id,
+	selector: 'mobile-app',
+	templateUrl: 'home.component.html'
 })
-// Component class implementing OnInit
-export class HomeComponent implements OnInit {
-  // Private property for binding
-  // Load data ones componet is ready
-  ngOnInit() {
-  }
+export class HomeComponent {
+	onScroll () {
+        console.log('scrolled!!')
+    }
 }

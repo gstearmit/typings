@@ -9,7 +9,8 @@ declare var $: any;
 })
 
 export class HeaderWeshopComponent implements OnInit {
-    ngOnInit() {}
+    ngOnInit() {
+	}
 
     public openMenuToggle() {
         $('.left-menu').addClass('open');

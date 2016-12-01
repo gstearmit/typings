@@ -110,6 +110,7 @@
     padding-left: 3px;
     margin-bottom: 0;
     white-space: nowrap;
+    text-align: center;
 }
 .amazon-sub-category ul li{
     list-style: none;

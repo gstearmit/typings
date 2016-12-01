@@ -3,7 +3,7 @@
 // import { provideRouter, RouterConfig } from '@angular/router';
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent }    from './app.component';
+//import { HomeComponent }    from './home/home.component';
 // import { AmazonPortalComponent }    from './amazon/portal/amazon-portal.component';
 //import { homeRoutes }    from './home/home.routes';
 //import { amazonRoutes }    from './amazon/amazon.routes';
@@ -12,7 +12,7 @@ import { AppComponent }    from './app.component';
 // Route Configuration
 export const routes: Routes = [
 
-  { path: '', component: AppComponent },
+  { path: '', redirectTo: 'home',pathMatch:'full' },
   //{ path: 'lazy', loadChildren: 'app/lazy/lazy.module#LazyModule' },
   { path: 'home', loadChildren: 'app/home/home.module#HomeModule' },
   { path: 'ebay', loadChildren: 'app/ebay/ebay.module#EbayModule' },

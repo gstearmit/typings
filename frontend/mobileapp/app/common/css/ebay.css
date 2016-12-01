@@ -422,7 +422,7 @@
     background: #eeeeee;
 }
 .amazon-detail .amazon-content,
-.ebay-detail .ebay-content{
+.ebay-detail .amazon-homepage{
     padding-bottom: 60px;
 }
 .ebay-detail-bid .ebay-content{

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { InfiniteScrollModule } from 'angular2-infinite-scroll';
+import { SwiperModule } from 'angular2-useful-swiper';
 import { EbayComponent }   from './portal/ebay.component';
 
 import { HeaderEbayComponent } from '../header/ebay/header-ebay.component';
@@ -13,12 +14,18 @@ import { EbayFeature2Component } from './portal/ebay-feature2/ebay-feature.compo
 import { EbayFeature3Component } from './portal/ebay-feature3/ebay-feature.component';
 import { EbayRecommendationComponent } from './portal/ebay-recommendation/ebay-recommendation.component';
 import { EbayFootcateComponent } from './portal/ebay-foot-cate/ebay-foot-cate.component';
-import { LeftMenuComponent } from '../header/left-menu.component';
+
+import { EbayBrowserComponent } from './browser/browser.component';
+import { EbayDetailComponent } from './detail/detail.component';
+
+import { EbayDetailSliderComponent } from '../slider/ebay/ebay-detail-slider.component';
+
+import { EbayDetailImageService } from '../slider/ebay/services/slider.service';
 
 import { ebayRoutes } from './ebay.routes';
 
 @NgModule({
-  imports: [ebayRoutes,BrowserModule,InfiniteScrollModule],
+  imports: [ebayRoutes,BrowserModule,InfiniteScrollModule,SwiperModule],
   declarations: [
 	  EbayComponent,
 	  EbayNavComponent,
@@ -30,7 +37,9 @@ import { ebayRoutes } from './ebay.routes';
 	  EbayRecommendationComponent,
 	  EbayFootcateComponent,
 	  HeaderEbayComponent,
-	  LeftMenuComponent
+	  EbayBrowserComponent,
+	  EbayDetailComponent,
+	  EbayDetailSliderComponent,
   ],
   exports: [
 	  EbayComponent,
@@ -43,9 +52,14 @@ import { ebayRoutes } from './ebay.routes';
 	  EbayRecommendationComponent,
 	  EbayFootcateComponent,
 	  HeaderEbayComponent,
-	  LeftMenuComponent
+	  EbayBrowserComponent,
+	  EbayDetailComponent,
+	  EbayDetailSliderComponent,
+	  SwiperModule
   ],
-  //providers: [NameListService]
+  providers: [
+	  EbayDetailImageService
+  ]
 })
 export class EbayModule { }
 

@@ -1,10 +1,9 @@
 /* * * ./app/home/hot-deal/model/hotdeal.ts * * */
 export class Hotdeal {
     constructor(
-        public id: string,
-        public src: string, 
-        public title:string,
-        public price: string,
-        public currency: string
+        public status: number, 
+        public success:number,
+		public messages:string,
+		public data:{'cms_block_data_product':{'data':{'productSellPriceLocal':{},'productName':string},'limit':number,'totalItem':number},'uploadUrl':string}
         ){}
 }

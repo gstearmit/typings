@@ -14,15 +14,12 @@ export class HotdealService {
      // Resolve HTTP using the constructor
      constructor (private http: Http) {}
      // private instance variable to hold base url
-     private UrlApi = 'http://m.weshop.tech/api/';
+     private UrlApi = 'http://api.weshop.com/block/getblock';
      
      // Fetch all existing comments
      getDataHotdeal() : Observable<Hotdeal[]>{
-         // ...using get request
-         return this.http.get(this.UrlApi+'getdatahotdeal')
-                        // ...and calling .json() on the response to return data
+         return this.http.get(this.UrlApi+'?pageId=34&blockName=category-product')     
                          .map((res:Response) => res.json())
-                         //...errors if any
                          .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
         
      }

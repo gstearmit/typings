@@ -58,9 +58,9 @@ import { routing } from './app.routes';
     HttpModule,
     JsonpModule,
     //SwiperModule,
-	EbayModule,
+	  EbayModule,
     //LazyModule,
-	HomeModule,
+	  HomeModule,
     routing
   ],
   declarations: [

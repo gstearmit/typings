@@ -12,7 +12,7 @@ import { Routes, RouterModule } from '@angular/router';
 // Route Configuration
 export const routes: Routes = [
 
-  { path: '', redirectTo: 'home',pathMatch:'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   //{ path: 'lazy', loadChildren: 'app/lazy/lazy.module#LazyModule' },
   { path: 'home', loadChildren: 'app/home/home.module#HomeModule' },
   { path: 'ebay', loadChildren: 'app/ebay/ebay.module#EbayModule' },

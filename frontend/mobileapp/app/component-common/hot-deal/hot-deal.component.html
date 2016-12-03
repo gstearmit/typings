@@ -11,7 +11,9 @@
                         <a href="/ebay/detail"><img src="{{ items.productImage }}" alt="{{ items.productName }}" title="{{ items.productName }}"/></a>
                     </div>
                     <div class="name"><a href="#">{{ items.productName }}</a></div>
-                    <div class="price">{{ items.productSellPriceLocal.price }} {{ items.productSellPriceLocal.currency.Name }}</div>
+                    <div class="price">
+					{{formatPriceService.getDefault( items.productSellPriceLocal.price ,1)}} 
+					{{ items.productSellPriceLocal.currency.Name }}</div>
                 </div>
             </li>
         </ul>

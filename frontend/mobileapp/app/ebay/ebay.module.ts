@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 
-import { BrowserModule } from '@angular/platform-browser';
+//import { BrowserModule } from '@angular/platform-browser';
 import { InfiniteScrollModule } from 'angular2-infinite-scroll';
 import { EbayComponent }   from './portal/ebay.component';
+import { SwiperModule } from 'angular2-useful-swiper';
 
 import { HeaderEbayComponent } from '../header/ebay/header-ebay.component';
 import { EbayNavComponent } from './portal/ebay-nav/ebay-nav.component';
@@ -15,10 +16,10 @@ import { EbayRecommendationComponent } from './portal/ebay-recommendation/ebay-r
 import { EbayFootcateComponent } from './portal/ebay-foot-cate/ebay-foot-cate.component';
 import { LeftMenuComponent } from '../header/left-menu.component';
 
-import { ebayRoutes } from './ebay.routes';
+import { EbayRoutingModule } from './ebay.routes';
 
 @NgModule({
-  imports: [ebayRoutes,BrowserModule,InfiniteScrollModule],
+  imports: [EbayRoutingModule,InfiniteScrollModule,SwiperModule],
   declarations: [
 	  EbayComponent,
 	  EbayNavComponent,
@@ -33,17 +34,17 @@ import { ebayRoutes } from './ebay.routes';
 	  LeftMenuComponent
   ],
   exports: [
-	  EbayComponent,
-	  EbayNavComponent,
-	  EbayBannerComponent,
-	  EbayHotdealComponent,
-	  EbayFeature1Component,
-	  EbayFeature2Component,
-	  EbayFeature3Component,
-	  EbayRecommendationComponent,
-	  EbayFootcateComponent,
-	  HeaderEbayComponent,
-	  LeftMenuComponent
+	//   EbayComponent,
+	//   EbayNavComponent,
+	//   EbayBannerComponent,
+	//   EbayHotdealComponent,
+	//   EbayFeature1Component,
+	//   EbayFeature2Component,
+	//   EbayFeature3Component,
+	//   EbayRecommendationComponent,
+	//   EbayFootcateComponent,
+	//   HeaderEbayComponent,
+	//   LeftMenuComponent
   ],
   //providers: [NameListService]
 })

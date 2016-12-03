@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 
 import { BrowserModule } from '@angular/platform-browser';
-import { InfiniteScrollModule } from 'angular2-infinite-scroll';
+
+//import { InfiniteScrollModule } from 'angular2-infinite-scroll';
 import { SwiperModule } from 'angular2-useful-swiper';
+import { CommonModule } from '@angular/common'; //<-- This one 
 
 import { HomeComponent }   from './home.component';
 import { HeaderWeshopComponent } from '../header/header-weshop.component';
@@ -15,10 +17,27 @@ import { EbayBoxComponent } from '../ebay/ebay-box/ebay-box.component';
 import { DhgateComponent } from '../dhgate/dhgate-box/dhgate.component';
 import { RecentlyViewComponent } from '../component-common/recently-view/recently-view.component';
 
+
+import { FormatPriceService }          from'../services-common/format-price.service';
+
+import { SliderService } from '../slider/weshop/services/slider.service';
+import { HotdealService } from '../component-common/hot-deal/services/hotdeal.service';
+import { AmazonBoxService } from '../amazon/amazon-box/services/amazon-box.service';
+import { EbayBoxService } from '../ebay/ebay-box/services/ebay-box.service';
+import { DhgateBoxService } from '../dhgate/dhgate-box/services/dhgate-box.service';
+import { EbayDetailImageService } from '../slider/ebay/services/slider.service';
+import { RecentlyviewService } from '../component-common/recently-view/services/recentlyview.service';
+
 import { homeRoutes } from './home.routes';
 
 @NgModule({
-  imports: [homeRoutes,BrowserModule,InfiniteScrollModule,SwiperModule],
+  imports: [
+  homeRoutes,
+  BrowserModule,
+  //InfiniteScrollModule,
+  SwiperModule,
+  CommonModule
+  ],
   declarations: [
 	HomeComponent,
 	HeaderWeshopComponent,
@@ -32,18 +51,27 @@ import { homeRoutes } from './home.routes';
 	RecentlyViewComponent
   ],
   exports: [
-	    HeaderWeshopComponent,
-		BigSliderWeshopComponent,
-		BuyFromComponent,
-		HelpBuyComponent,
-		AmazonBoxComponent,
-		HotDealComponent,
-		EbayBoxComponent,
-		DhgateComponent,
-		RecentlyViewComponent,
-	    SwiperModule
+	    // HeaderWeshopComponent,
+		// BigSliderWeshopComponent,
+		// BuyFromComponent,
+		// HelpBuyComponent,
+		// AmazonBoxComponent,
+		// HotDealComponent,
+		// EbayBoxComponent,
+		// DhgateComponent,
+		// RecentlyViewComponent,
+	    // SwiperModule
   ],
-  //providers: [NameListService]
+  providers: [
+	SliderService,
+    HotdealService,
+    AmazonBoxService,
+    DhgateBoxService,
+    EbayBoxService,
+    RecentlyviewService,
+    EbayDetailImageService,
+	FormatPriceService
+  ]
 })
 export class HomeModule { }
 

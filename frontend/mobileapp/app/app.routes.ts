@@ -8,6 +8,7 @@ export const routes: Routes = [
   { path: 'home', loadChildren: 'app/home/home.module#HomeModule' },
   { path: 'ebay', loadChildren: 'app/ebay/ebay.module#EbayModule' },
   { path: 'notfound',component: NotFoundComponent  }
+  { path: 'amazon', loadChildren: 'app/amazon/amazon.module#AmazonModule' },
 ];
 
 @NgModule({

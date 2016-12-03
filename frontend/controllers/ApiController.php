@@ -169,6 +169,18 @@ class ApiController extends Controller
         return $listImage;
     }
 
+    public function actionGetamazondetailimages()
+    {
+        $listImage = new \stdClass();
+        for($i=0; $i<4; $i++){
+            $item = new \stdClass();
+            $item->{'src'} = 'app/common/img/ebay-detail-pd.jpg';
+            $item->{'title'} = 'image '.$i;
+            $listImage->{$i} =$item;
+        }
+        return $listImage;
+    }
+
     public function actionLogin()
     {
         $data = Yii::$app->getRequest()->getBodyParams();

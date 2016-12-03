@@ -27,8 +27,9 @@
       // other libraries
       'rxjs':                      'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
-      'angular2-useful-swiper': 'node_modules/angular2-useful-swiper/lib',
-      'angular2-infinite-scroll': 'npm:angular2-infinite-scroll'
+      'angular2-useful-swiper': 'npm:angular2-useful-swiper/lib',
+      'angular2-infinite-scroll': 'npm:angular2-infinite-scroll',
+	  'angular2-localstorage':      'npm:angular2-localstorage'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -50,7 +51,10 @@
       'angular2-infinite-scroll': {
         main: 'angular2-infinite-scroll.js',
         defaultExtension: 'js'
-      }
+      },
+	  'angular2-localstorage': {
+		defaultExtension: "js"
+	  }
     }
   });
 })(this);

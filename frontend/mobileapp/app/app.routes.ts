@@ -4,11 +4,11 @@ import { NotFoundComponent } from './404/404.component';
 export const routes: Routes = [
 
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', redirectTo: 'notfound' },
   { path: 'home', loadChildren: 'app/home/home.module#HomeModule' },
   { path: 'ebay', loadChildren: 'app/ebay/ebay.module#EbayModule' },
+  { path: '**', redirectTo: 'notfound' },
   { path: 'notfound',component: NotFoundComponent  }
-  { path: 'amazon', loadChildren: 'app/amazon/amazon.module#AmazonModule' },
+  //{ path: 'amazon', loadChildren: 'app/amazon/amazon.module#AmazonModule' }
 ];
 
 @NgModule({

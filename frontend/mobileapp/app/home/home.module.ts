@@ -29,14 +29,15 @@ import { EbayDetailImageService } from '../slider/ebay/services/slider.service';
 import { RecentlyviewService } from '../component-common/recently-view/services/recentlyview.service';
 
 import { homeRoutes } from './home.routes';
-
+import { TranslateModule, TranslatePipe } from 'ng2-translate';
 @NgModule({
   imports: [
   homeRoutes,
   BrowserModule,
   //InfiniteScrollModule,
   SwiperModule,
-  CommonModule
+  CommonModule,
+  TranslateModule.forRoot()
   ],
   declarations: [
 	HomeComponent,

@@ -5,9 +5,9 @@ import { AppComponent } from './app.component';
 
 export const routes: Routes = [
 
-  { path: '', component: AppComponent },
+  // { path: '', component: AppComponent },
 
-  // { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', loadChildren: 'app/home/home.module#HomeModule' },
   { path: 'ebay', loadChildren: 'app/ebay/ebay.module#EbayModule' },
   { path: '**', redirectTo: 'notfound' },

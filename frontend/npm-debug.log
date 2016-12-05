@@ -6,7 +6,7 @@
 3 info using node@v6.9.1
 4 verbose stack Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\weshop-webmobile\package.json'
 4 verbose stack     at Error (native)
-5 verbose cwd C:\xampp\htdocs\weshop-webmobile
+5 verbose cwd C:\xampp\htdocs\weshop-webmobile\frontend
 6 error Windows_NT 10.0.14393
 7 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\quang\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "start"
 8 error node v6.9.1

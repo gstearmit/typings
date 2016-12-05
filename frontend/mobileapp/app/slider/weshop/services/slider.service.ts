@@ -12,12 +12,11 @@ import 'rxjs/add/operator/catch';
 @Injectable()
 export class SliderService {
      constructor (private http: Http) {}
-     private sliderUrl = 'http://api.weshop.com/block/getblock';
+    private sliderUrl = 'http://localhost:5000/api/';
      getSliders() : Observable<Slider[]>{
-         return this.http.get(this.sliderUrl+'?pageId=53&blockName=header-alias-topstore1')
+         return this.http.get(this.sliderUrl+'listsliders')
                          .map((res:Response) => res.json())
                          .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
-        
      }
 
      // Add a new comment

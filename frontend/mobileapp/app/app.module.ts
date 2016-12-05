@@ -10,6 +10,7 @@ import { EbayModule } from './ebay/ebay.module';
 
 import { LeftMenuComponent } from './header/left-menu.component';
 
+
 import { AppComponent }       from './app.component';
 import { SliderService } from './slider/weshop/services/slider.service';
 import { HotdealService } from './component-common/hot-deal/services/hotdeal.service';

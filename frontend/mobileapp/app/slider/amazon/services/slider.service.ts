@@ -14,7 +14,7 @@ export class AmazonDetailImageService {
      // Resolve HTTP using the constructor
      constructor (private http: Http) {}
      // private instance variable to hold base url
-     private sliderUrl = 'http://localhost:5000/api/';
+     private sliderUrl = 'http://192.168.11.252:88/';
      
      // Fetch all existing comments
      getAmazonDetailImage() : Observable<Slider[]>{

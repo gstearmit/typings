@@ -12,8 +12,6 @@ export class HomeComponent implements OnInit {
 	constructor(private translate: TranslateService) { }
 
      ngOnInit() {
-        this.translate.addLangs(["en", "fr"]);
-        this.translate.setDefaultLang('fr');
-        this.translate.use('fr');
+        
     }
 }

@@ -2,23 +2,25 @@ import { Component, OnInit } from '@angular/core';
 import { HotdealService } from './services/hotdeal.service'
 import { FormatPriceService } from '../../services-common/format-price.service';
 import { Hotdeal }           from './model/hotdeal';
-
+import { TranslateService } from 'ng2-translate';
 @Component({
     moduleId: module.id,
     selector: 'hot-deal',
     templateUrl: `hot-deal.component.html`,
-	providers: [HotdealService,FormatPriceService]
+	providers: [HotdealService,FormatPriceService,TranslateService]
 })
 
 export class HotDealComponent implements OnInit {
 	public dataHotDeal:{};
     public datas: Hotdeal[] = [];
     public uploadUrl:string;
-    constructor(private hotdealService: HotdealService, public formatPriceService:FormatPriceService) {
+    constructor(private hotdealService: HotdealService, public formatPriceService:FormatPriceService, public translateService:TranslateService) {
         this.getHotDeal();
     }
     ngOnInit() {
-        
+        this.translateService.addLangs(["en", "vn"]);
+        this.translateService.setDefaultLang('vn');
+        this.translateService.use('vn');
     }
     getHotDeal(){
         let self = this;

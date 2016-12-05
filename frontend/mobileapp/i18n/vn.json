@@ -1,6 +1,9 @@
 {
   "HOME": {
-    "TITLE": "Tuấn Dương",
-    "SELECT": "Tuấn Dương Ngôn Ngữ"
+    "TITLE": "Trang chủ",
+    "HOTDEALS":"Ưu đãi",
+    "BUYFROM":"Mua Từ",
+    "SEEALL":"Xem tất cả",
+    "RECENTLYVIEW":"Sản phẩm vừa xem"
   }
 }

@@ -1,6 +1,9 @@
 {
   "HOME": {
     "TITLE": "Hello Angular 2 with ng2-translate!",
-    "SELECT": "Change languageádfads"
+    "HOTDEALS":"Hot Deals today",
+    "BUYFROM":"Buy from",
+    "SEEALL":"See all",
+    "RECENTLYVIEW":"Recently view"
   }
 }

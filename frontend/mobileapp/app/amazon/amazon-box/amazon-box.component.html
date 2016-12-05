@@ -1,7 +1,7 @@
 <div class="portal-feature">
     <a class="title wow slideInUp" data-wow-delay="0.2s" [routerLink]="['/amazon']">
-        <span class="portal-name">Buy from <i class="portal-logo amazon"></i></span>
-        <span class="see-all">See all <i class="fa fa-chevron-right"></i></span>
+        <span class="portal-name">{{ 'HOME.BUYFROM' | translate }} <i class="portal-logo amazon"></i></span>
+        <span class="see-all">{{ 'HOME.SEEALL' | translate }}<i class="fa fa-chevron-right"></i></span>
     </a>
     <div class="content">
         <div class="big-banner wow fadeInUp" data-wow-delay="0.2s" *ngFor="let items of slider" >

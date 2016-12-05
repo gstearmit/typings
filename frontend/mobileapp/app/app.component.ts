@@ -12,9 +12,6 @@ import { TranslateService } from 'ng2-translate';
     // TranslateService
   ],
 })
-<<<<<<< HEAD
-export class AppComponent{}
-=======
 export class AppComponent implements OnInit {
     constructor(private translate: TranslateService) { }
 
@@ -24,4 +21,3 @@ export class AppComponent implements OnInit {
         this.translate.use('en');
     }
 }
->>>>>>> d73e875111bcbee05b3957ede1ddb38f7cb8f7b4

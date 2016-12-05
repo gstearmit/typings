@@ -14,7 +14,7 @@ export class HotdealService {
      // Resolve HTTP using the constructor
      constructor (private http: Http) {}
      // private instance variable to hold base url
-     private UrlApi = 'http://api.weshop.com/block/getblock';
+    private UrlApi = 'http://localhost:5000/api/';
      
      // Fetch all existing comments
      getDataHotdeal() : Observable<Hotdeal[]>{

@@ -14,7 +14,7 @@ import { HelpBuyComponent } from '../component-common/help-buy/help-buy.componen
 import { HotDealComponent } from '../component-common/hot-deal/hot-deal.component';
 import { AmazonBoxComponent } from '../amazon/amazon-box/amazon-box.component';
 import { EbayBoxComponent } from '../ebay/ebay-box/ebay-box.component';
-import { DhgateComponent } from '../dhgate/dhgate-box/dhgate.component';
+// import { DhgateComponent } from '../dhgate/dhgate-box/dhgate.component';
 import { RecentlyViewComponent } from '../component-common/recently-view/recently-view.component';
 
 
@@ -24,12 +24,13 @@ import { SliderService } from '../slider/weshop/services/slider.service';
 import { HotdealService } from '../component-common/hot-deal/services/hotdeal.service';
 import { AmazonBoxService } from '../amazon/amazon-box/services/amazon-box.service';
 import { EbayBoxService } from '../ebay/ebay-box/services/ebay-box.service';
-import { DhgateBoxService } from '../dhgate/dhgate-box/services/dhgate-box.service';
+// import { DhgateBoxService } from '../dhgate/dhgate-box/services/dhgate-box.service';
 import { EbayDetailImageService } from '../slider/ebay/services/slider.service';
 import { RecentlyviewService } from '../component-common/recently-view/services/recentlyview.service';
 
 import { homeRoutes } from './home.routes';
-import { TranslateModule, TranslatePipe } from 'ng2-translate';
+import { ShareModule} from '../share/share.module';
+
 @NgModule({
   imports: [
   homeRoutes,
@@ -37,7 +38,7 @@ import { TranslateModule, TranslatePipe } from 'ng2-translate';
   //InfiniteScrollModule,
   SwiperModule,
   CommonModule,
-  TranslateModule.forRoot()
+  ShareModule
   ],
   declarations: [
 	HomeComponent,
@@ -48,7 +49,7 @@ import { TranslateModule, TranslatePipe } from 'ng2-translate';
 	AmazonBoxComponent,
 	HotDealComponent,
 	EbayBoxComponent,
-	DhgateComponent,
+	// DhgateComponent,
 	RecentlyViewComponent
   ],
   exports: [
@@ -67,7 +68,7 @@ import { TranslateModule, TranslatePipe } from 'ng2-translate';
 	SliderService,
     HotdealService,
     AmazonBoxService,
-    DhgateBoxService,
+    // DhgateBoxService,
     EbayBoxService,
     RecentlyviewService,
     EbayDetailImageService,

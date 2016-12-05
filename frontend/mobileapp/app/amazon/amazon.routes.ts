@@ -1,13 +1,24 @@
 // Imports
 // Deprecated import
 // import { RouterConfig } from '@angular/router';
-import { Routes } from '@angular/router';
 
-import { AmazonComponent }    from './amazon.component';
-import { AmazonPortalComponent }    from './portal/portal.component';
+import { NgModule } from '@angular/core';
+import { ModuleWithProviders } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
-// Route Configuration
-export const amazonRoutes: Routes = [
-    { path: 'amazon', component: AmazonComponent },
-    { path: 'amazon/portal', component: AmazonPortalComponent }
-]
+import { AmazonComponent }    from './portal/amazon.component';
+import { AmazonBrowserComponent }    from './browser/browser.component';
+import { AmazonDetailComponent }    from './detail/detail.component';
+
+@NgModule({
+    imports: [
+        RouterModule.forChild([
+            { path: 'amazon', component: AmazonComponent },
+            { path: 'amazon/browser', component: AmazonBrowserComponent },
+            { path: 'amazon/detail', component: AmazonDetailComponent },
+        ])
+    ],
+    exports: [RouterModule]
+})
+
+export class amazonRoutes { }

@@ -1,19 +1,19 @@
 <div class="hot-deal">
     <div class="title wow slideInUp" data-wow-delay="0.2s">
         <strong>{{ 'HOME.HOTDEALS' | translate }}</strong>
-        <a class="see-all" href="/">See all <i class="fa fa-chevron-right"></i></a>
+        <a class="see-all" href="/">{{ 'HOME.SEEALL' | translate }}<i class="fa fa-chevron-right"></i></a>
     </div>
     <div class="content wow fadeInUp" data-wow-delay="0.2s">
         <ul>
-             <li *ngFor="let items of dataHotDeal">
+            <li *ngFor="let items of dataHotDeal">
                 <div class="item">
                     <div class="thumb">
-                        <a href="/ebay/detail"><img src="{{ items.productImage }}" alt="{{ items.productName }}" title="{{ items.productName }}"/></a>
+                        <a href="/ebay/detail"><img src="{{ items.productImage }}" alt="{{ items.productName }}" title="{{ items.productName }}"
+                            /></a>
                     </div>
                     <div class="name"><a href="#">{{ items.productName }}</a></div>
                     <div class="price">
-					{{formatPriceService.getDefault( items.productSellPriceLocal.price ,1)}} 
-					{{ items.productSellPriceLocal.currency.Name }}</div>
+                        {{formatPriceService.getDefault( items.productSellPriceLocal.price ,1)}} {{ items.productSellPriceLocal.currency.Name }}</div>
                 </div>
             </li>
         </ul>

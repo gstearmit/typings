@@ -10,6 +10,8 @@ import { NotFoundComponent } from './404/404.component';
 import { AppRoutingModule } from './app.routes';
 import { TranslateModule } from 'ng2-translate';
 
+
+
 @NgModule({
   imports: [
     // BrowserModule,

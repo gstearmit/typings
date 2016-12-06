@@ -1,9 +1,10 @@
 /* * * ./app/home/hot-deal/services/hotdeal.ts * * */
 // Imports
 import { Injectable }     from '@angular/core';
-import { Http, Response, Headers, RequestOptions } from '@angular/http';
-import { Hotdeal }           from '../model/hotdeal';
-import {Observable} from 'rxjs/Rx';
+import { Http,Response}            from '@angular/http';
+import { Hotdeal }        from '../model/hotdeal';
+import {Observable}       from 'rxjs/Rx';
+import { contentHeaders } from './../../../enu/headers';
 
 // Import RxJs required methods
 import 'rxjs/add/operator/map';
@@ -15,11 +16,9 @@ export class HotdealService {
      constructor (private http: Http) {}
      // private instance variable to hold base url
     private UrlApi = 'http://192.168.11.252:88/block/getblock';
-
      // Fetch all existing comments
      getDataHotdeal() : Observable<Hotdeal[]>{
-         let headers = new Headers({ 'Accept': 'application/json' }); // ... Set content type to JSON
-         return this.http.get(this.UrlApi+'?pageId=34&blockName=category-product',{headers: headers})
+         return this.http.get(this.UrlApi+'?pageId=34&blockName=category-product',{ headers: contentHeaders })
                          .map((res:Response) => res.json())
                          .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
      }

@@ -1,22 +1,18 @@
 import { NgModule } from '@angular/core';
-// import { CommonModule } from '@angular/common'; //<-- This one 
-// import { ShareComponent } from './share.component';
-import { TranslateModule, TranslatePipe } from 'ng2-translate';
+import { TranslateModule} from 'ng2-translate';
 @NgModule({
 	imports: [
-		// CommonModule,
-		TranslateModule
+		TranslateModule,
+		TranslateModule.forRoot()
 	],
 
 	exports: [
-		// CommonModule,
-		TranslateModule,
+		TranslateModule
 	],
 	providers: [
 
 	],
 	declarations: [
-		// ShareComponent
 	]
 })
 export class ShareModule { }

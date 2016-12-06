@@ -1,21 +1,21 @@
 <div class="portal-feature">
-    <a class="title wow slideInUp" data-wow-delay="0.2s" [routerLink]="['/amazon']">
+    <a class="title wow slideInUp" data-wow-delay="0.2s" routerLink="'/amazon'">
         <span class="portal-name">{{ 'HOME.BUYFROM' | translate }} <i class="portal-logo amazon"></i></span>
         <span class="see-all">{{ 'HOME.SEEALL' | translate }}<i class="fa fa-chevron-right"></i></span>
     </a>
     <div class="content">
-        <div class="big-banner wow fadeInUp" data-wow-delay="0.2s" *ngFor="let items of slider" >
-            <a href="/">
-                <span class="hide">{{items.id}}</span>
-                <img src="{{items.src}}" alt="{{items.title}}" title="{{items.title}}"/>
-            </a>
-        </div>
+        <!--<div class="big-banner wow fadeInUp" data-wow-delay="0.2s" *ngFor="let items of slider" >-->
+            <!--<a href="/">-->
+                <!--<span class="hide">{{items.id}}</span>-->
+                <!--<img src="{{items.src}}" alt="{{items.title}}" title="{{items.title}}"/>-->
+            <!--</a>-->
+        <!--</div>-->
         
         <ul class="banner-list">
-            <li class="wow fadeInUp" data-wow-delay="0.2s" *ngFor="let item of listimage">
+            <li class="wow fadeInUp" data-wow-delay="0.2s" *ngFor="let items of dataImage">
                 <a href="/">
-                    <span class="hide">{{item.id}}</span>
-                    <img src="{{item.src}}" alt="{{item.title}}" title="{{item.title}}"/>
+                    <span class="hide">{{items.id}}</span>
+                    <img src="{{uploadUrl}}/{{items.linkImage}}" alt="{{items.title}}" title="{{items.title}}"/>
                 </a>
             </li>
         </ul>

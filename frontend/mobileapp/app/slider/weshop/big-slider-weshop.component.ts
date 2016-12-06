@@ -21,8 +21,7 @@ export class BigSliderWeshopComponent implements OnInit {
     constructor(private sliderService: SliderService) {
        this.getData();
     }
-    ngOnInit() {
-    }
+    ngOnInit() {}
 	getData(){
         let self = this;
         this.sliderService.getSliders().subscribe(function (res) {

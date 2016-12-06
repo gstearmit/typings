@@ -11,13 +11,14 @@ import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class SliderService {
-    private headers: Headers;
-    constructor (private http: Http) {}
-    private sliderUrl = 'http://192.168.11.252:88/';
+    private headers;
+    constructor (private http: Http) {
+        this.headers = new Headers({ 'Accept': 'application/json' });
+    }
+    private sliderUrl = 'http://192.168.11.252:88/block/getblock';
      getSliders() : Observable<Slider[]>{
-         let headers = new Headers({ 'Content-Type': 'application/json' }); // ... Set content type to JSON
-         return this.http.get(this.sliderUrl+'?pageId=53&blockName=header-alias-topstore1')
-                         .map((res:Response) => console.log(res.json()))
+         return this.http.get(this.sliderUrl+'?pageId=53&blockName=header-alias-topstore1',{headers:this.headers})
+                         .map((res:Response) => res.json())
                          .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
      }
 

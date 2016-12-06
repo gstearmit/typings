@@ -11,15 +11,16 @@ import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class AmazonBoxService {
-     // Resolve HTTP using the constructor
-     constructor (private http: Http) {}
-     // private instance variable to hold base url
-    private UrlApi = 'http://192.168.11.252:88/';
+    private headers;
+    constructor (private http: Http) {
+        this.headers = new Headers({ 'Accept': 'application/json' });
+    }
+    private UrlApi = 'http://192.168.11.252:88/block/getblock';
      
      // Fetch all existing comments
      getDataAmazonBox() : Observable<AmazonBox[]>{
          // ...using get request
-         return this.http.get(this.UrlApi+'getdataamazonbox')
+         return this.http.get(this.UrlApi+'?pageName=mobile-home-page-vn&blockName=buy-from-amazon-mobile',{headers:this.headers})
                         // ...and calling .json() on the response to return data
                          .map((res:Response) => res.json())
                          //...errors if any

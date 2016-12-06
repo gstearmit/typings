@@ -13,7 +13,12 @@ export class AppComponent implements OnInit {
 
      ngOnInit() {
         this.translate.addLangs(["en", "vn","home.vn","home.en"]);
-        this.translate.setDefaultLang('home.en');
-        this.translate.use('home.en');
+        if(window.location.hostname=='localhost'){
+            this.translate.setDefaultLang('home.vn');
+            this.translate.use('home.vn');
+        }else{
+            this.translate.setDefaultLang('home.en');
+            this.translate.use('home.en');
+        }
     }
 }

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { HotdealService } from './services/hotdeal.service'
 import { FormatPriceService } from '../../services-common/format-price.service';
 import { Hotdeal }           from './model/hotdeal';
-
 @Component({
     moduleId: module.id,
     selector: 'hot-deal',
@@ -10,16 +9,14 @@ import { Hotdeal }           from './model/hotdeal';
 	providers: [HotdealService,FormatPriceService]
 })
 
-export class HotDealComponent implements OnInit {
+export class HotDealComponent  {
 	public dataHotDeal:{};
     public datas: Hotdeal[] = [];
     public uploadUrl:string;
     constructor(private hotdealService: HotdealService, public formatPriceService:FormatPriceService) {
         this.getHotDeal();
     }
-    ngOnInit() {
-        
-    }
+  
     getHotDeal(){
         let self = this;
         this.hotdealService.getDataHotdeal().subscribe(function (res) {

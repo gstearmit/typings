@@ -14,7 +14,7 @@ export class EbayDetailImageService {
      // Resolve HTTP using the constructor
      constructor (private http: Http) {}
      // private instance variable to hold base url
-     private sliderUrl = 'http://m.weshop.tech/api/';
+    private sliderUrl = 'http://192.168.11.252:88/';
      
      // Fetch all existing comments
      getEbayDetailImage() : Observable<Slider[]>{

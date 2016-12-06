@@ -8,7 +8,9 @@ import { HomeModule } from './home/home.module';
 import { AppComponent } from './app.component';
 import { NotFoundComponent } from './404/404.component';
 import { AppRoutingModule } from './app.routes';
-import { TranslateModule } from 'ng2-translate';
+
+//import { TranslateModule } from 'ng2-translate';
+import { ShareModule} from './share/share.module';
 
 
 
@@ -20,7 +22,7 @@ import { TranslateModule } from 'ng2-translate';
     JsonpModule,
     HomeModule,
     AppRoutingModule,
-    TranslateModule.forRoot()
+    ShareModule
   ],
   declarations: [
     AppComponent,

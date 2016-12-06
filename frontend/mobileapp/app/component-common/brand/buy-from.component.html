@@ -1,8 +1,8 @@
 <div class="buy-from">
     <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" [ngClass]="{'active': active=='us'}"><a data-target="#us-store" role="tab" data-toggle="tab" (click)="tabClick('us')">Buy from USA store</a></li>
-        <li role="presentation" [ngClass]="{'active': active=='cn'}"><a data-target="#cn-store" role="tab" data-toggle="tab" (click)="tabClick('cn')">Buy from China store</a></li>
-        <li role="presentation" [ngClass]="{'active': active=='kr'}"><a data-target="#kr-store" role="tab" data-toggle="tab" (click)="tabClick('kr')">Buy from Korea store</a></li>
+        <li role="presentation" [ngClass]="{'active': active=='us'}"><a data-target="#us-store" role="tab" data-toggle="tab" (click)="tabClick('us')">{{ 'HOME.BUYFROM' | translate }} USA store</a></li>
+        <li role="presentation" [ngClass]="{'active': active=='cn'}"><a data-target="#cn-store" role="tab" data-toggle="tab" (click)="tabClick('cn')">{{ 'HOME.BUYFROM' | translate }} China store</a></li>
+        <li role="presentation" [ngClass]="{'active': active=='kr'}"><a data-target="#kr-store" role="tab" data-toggle="tab" (click)="tabClick('kr')">{{ 'HOME.BUYFROM' | translate }} Korea store</a></li>
     </ul>
     <div class="tab-content">
         <div role="tabpanel" *ngIf="active=='us'" class="tab-pane active" id="us-store">
@@ -17,7 +17,7 @@
                 </div>
             </swiper>
             <div class="see-all">
-                <a href="/">See All Brands <i class="fa fa-chevron-right"></i></a>
+                <a href="/">{{ 'HOME.SEEBRAND' | translate }} <i class="fa fa-chevron-right"></i></a>
             </div>
         </div>
         <div role="tabpanel" *ngIf="active=='cn'" class="tab-pane active" id="cn-store">
@@ -32,7 +32,7 @@
                 </div>
             </swiper>
             <div class="see-all">
-                <a href="/">See All Brands <i class="fa fa-chevron-right"></i></a>
+                <a href="/">{{ 'HOME.SEEBRAND' | translate }} <i class="fa fa-chevron-right"></i></a>
             </div>
         </div>
         <div role="tabpanel" *ngIf="active=='kr'" class="tab-pane active" id="kr-store">
@@ -47,7 +47,7 @@
                 </div>
             </swiper>
             <div class="see-all">
-                <a href="/">See All Brands <i class="fa fa-chevron-right"></i></a>
+                <a href="/">{{ 'HOME.SEEBRAND' | translate }} <i class="fa fa-chevron-right"></i></a>
             </div>
         </div>
     </div>

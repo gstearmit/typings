@@ -14,12 +14,14 @@ export class EbayDetailImageService {
      // Resolve HTTP using the constructor
      constructor (private http: Http) {}
      // private instance variable to hold base url
-     private sliderUrl = 'http://m.weshop.tech/api/';
+    private sliderUrl = 'http://192.168.11.252:88/';
      
      // Fetch all existing comments
      getEbayDetailImage() : Observable<Slider[]>{
+         let headers = new Headers({ 'Content-Type': 'application/json' }); // ... Set content type to JSON
+         let options = new RequestOptions({ headers: headers });
          // ...using get request
-         return this.http.get(this.sliderUrl+'getebaydetailimages')
+         return this.http.get(this.sliderUrl+'getebaydetailimages', options)
                         // ...and calling .json() on the response to return data
                          .map((res:Response) => res.json())
                          //...errors if any

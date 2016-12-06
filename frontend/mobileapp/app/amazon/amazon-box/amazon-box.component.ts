@@ -1,23 +1,21 @@
 import { Component, OnInit} from '@angular/core';
 import { AmazonBoxService } from './services/amazon-box.service';
 import {AmazonBox}          from'./model/amazon-box';
-
 @Component({
     moduleId: module.id,
     selector: 'amazon-box',
-    templateUrl: `amazon-box.component.html`
+    templateUrl: `amazon-box.component.html`,
+    providers: [AmazonBoxService]
 })
 
-export class AmazonBoxComponent implements OnInit {
+export class AmazonBoxComponent {
     public listimage:{};
     public slider:{};
-    datas: AmazonBox[] = []
+    datas: AmazonBox[] = [];
     constructor(private amazonBoxService: AmazonBoxService) {
         this.getData();
     }
-    ngOnInit(){
-        
-    }
+   
     getData(){
         let self = this;
         this.amazonBoxService.getDataAmazonBox().subscribe(function (res) {

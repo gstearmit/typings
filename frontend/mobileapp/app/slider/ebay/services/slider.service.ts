@@ -18,8 +18,10 @@ export class EbayDetailImageService {
      
      // Fetch all existing comments
      getEbayDetailImage() : Observable<Slider[]>{
+         let headers = new Headers({ 'Content-Type': 'application/json' }); // ... Set content type to JSON
+         let options = new RequestOptions({ headers: headers });
          // ...using get request
-         return this.http.get(this.sliderUrl+'getebaydetailimages')
+         return this.http.get(this.sliderUrl+'getebaydetailimages', options)
                         // ...and calling .json() on the response to return data
                          .map((res:Response) => res.json())
                          //...errors if any

@@ -17,7 +17,7 @@ import { GlobalComponent } from './global.component';
     path: 'global',component: GlobalComponent,
     children: [
      { path: '', redirectTo: 'home', pathMatch: 'full' },
-     { path: 'home', loadChildren: './app/global-module/home-module/home.module#HomeModule' },
+    //  { path: 'home', loadChildren: './app/global-module/home-module/home.module#HomeModule' },
 
     ]
   }

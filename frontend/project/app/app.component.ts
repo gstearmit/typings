@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from 'ng2-translate';
+import { TranslateService,TranslatePipe } from 'ng2-translate';
 
 @Component({
     selector: 'mobile-app',

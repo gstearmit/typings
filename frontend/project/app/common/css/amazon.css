@@ -1,0 +1,444 @@
+/*Created by nktquan@gmail.com 4/14/16*/
+
+.ws-header.amazon-header{
+    background: #232f3e;
+}
+.amazon-searchbox:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.amazon-searchbox .left{
+    width: 110px;
+    float: left;
+    padding-top: 15px;
+}
+.amazon-searchbox .left img{
+    width: 100%;
+}
+.amazon-searchbox .right{
+    margin-left: 120px;
+}
+.amazon-searchbox .input-group-btn{}
+.amazon-searchbox .input-group-btn .dropdown-toggle{
+    height: 44px;
+    width: 44px;
+    background: #f5f5f5;
+    border: none;
+    border-right: 1px solid #bfbfbf;
+    color: #bfbfbf;
+    font-size: 16px;
+}
+.amazon-searchbox .input-group-btn .dropdown-menu{}
+.amazon-searchbox .input-group-btn .dropdown-menu ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.amazon-searchbox .input-group-btn .dropdown-menu ul li{
+    list-style: none;
+}
+.amazon-searchbox .input-group-btn .dropdown-menu ul li a{
+    display: block;
+    padding: 3px 12px;
+    color: #666;
+    text-decoration: none;
+}
+.amazon-searchbox .input-group-btn .dropdown-menu ul li span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.amazon-searchbox .input-group-btn .dropdown-menu ul.bottom{
+    border-top: 1px solid #e0e0e0;
+    font-weight: 500;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.amazon-searchbox .input-group-btn .dropdown-menu .amz-ico{
+    display: inline-block;
+    width: 42px;
+    height: 15px;
+    background: url('../img/amz-sub-logo.svg') no-repeat;
+    vertical-align: middle;
+}
+.amazon-searchbox .input-group-btn .dropdown-menu .ebay-ico{
+    display: inline-block;
+    width: 37px;
+    height: 15px;
+    background: url('../img/ebay-sub-logo.svg') no-repeat;
+    vertical-align: middle;
+}
+.amazon-category{
+    background: url("../img/amazon-cate-bg.jpg") no-repeat;
+    background-size: cover;
+}
+.amazon-category .box{
+    overflow: auto;
+}
+.amazon-category ul{
+    padding-left: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+    padding: 50px 0 20px;
+}
+.amazon-category ul li{
+    list-style: none;
+    display: inline-block;
+}
+.amazon-category ul li a{
+    color: #fff;
+    display: table-cell;
+    padding: 0 20px;
+    font-size: 16px;
+    text-align: center;
+    height: 52px;
+    vertical-align: bottom;
+    text-decoration: none;
+}
+.amazon-category ul li.active a{
+    font-size: 18px;
+    font-weight: bold;
+    width: 150px;
+    white-space: normal;
+    border-bottom: 5px solid #ffa000;
+    padding-bottom: 15px;
+}
+.amazon-sub-category{}
+.amazon-sub-category .box{
+    overflow: auto;
+}
+.amazon-sub-category ul{
+    padding-left: 3px;
+    margin-bottom: 0;
+    white-space: nowrap;
+    text-align: center;
+}
+.amazon-sub-category ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: -3px;
+    width: 120px;
+}
+.amazon-sub-category ul li a{
+    display: block;
+    background: #f5f5f5;
+    border-right: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+    text-decoration: none;
+}
+.amazon-sub-category ul li a .thumb{
+    width: 100px;
+}
+.amazon-sub-category ul li a .thumb img{
+    width: 100%;
+}
+.amazon-sub-category ul li a .name{
+    white-space: normal;
+    display: table-cell;
+    height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    width: 100px;
+}
+.amazon-inspired{
+    overflow: auto;
+}
+.amazon-inspired ul{
+    padding-left: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+.amazon-inspired ul li{
+    list-style: none;
+    display: inline-block;
+    width: 240px;
+    padding: 10px;
+}
+.amazon-inspired ul li a{
+    text-decoration: none;
+}
+.amazon-inspired ul li .thumb{
+    border: 1px solid #ebebeb;
+    overflow: hidden;
+}
+.amazon-inspired ul li .thumb span{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 220px;
+    height: 220px;
+}
+.amazon-inspired ul li .thumb img{
+    max-width: 220px;
+    max-height: 220px;
+}
+.amazon-inspired ul li .name{
+    white-space: normal;
+    font-size: 18px;
+    color: #a3a3a3;
+    height: 45px;
+    overflow: hidden;
+    line-height: 1.2;
+    margin-top: 5px;
+}
+.amazon-inspired ul li .price{
+    font-size: 18px;
+    color: #cc0000;
+}
+.portal-nav{
+    background: #f5f5f5;
+}
+.portal-nav ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.portal-nav ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.portal-nav ul li{
+    list-style: none;
+    display: block;
+    width: 50%;
+    float: left;
+}
+.portal-nav ul li a{
+    display: block;
+    color: #666666;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
+    position: relative;
+    text-decoration: none;
+}
+.portal-nav ul li:first-child a:after{
+    content: '';
+    display: block;
+    border: 0.5px solid #cacaca;
+    position: absolute;
+    height: 25px;
+    top: 9px;
+    right: 0;
+}
+.portal-hotdeal{
+    background: #fff;
+}
+.portal-hotdeal .title{
+    padding: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid #d9d9d9;
+    box-shadow: 0px 1px 2px #e3e3e3;
+    position: relative;
+    z-index: 1;
+    background: #f5f5f5;
+}
+.portal-hotdeal .title strong{
+    color: #444343;
+}
+.portal-hotdeal .title .see-all{
+    float: right;
+    color: #999999;
+    font-weight: 300;
+}
+.portal-feature .category-list,
+.portal-hotdeal .category-list{
+    background: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 10px;
+    overflow-x: auto;
+}
+.portal-feature .category-list ul,
+.portal-hotdeal .category-list ul{
+    padding-left: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+.portal-feature .category-list ul li,
+.portal-hotdeal .category-list ul li{
+    display: inline-block;
+    list-style: none;
+}
+.portal-feature .category-list ul li a,
+.portal-hotdeal .category-list ul li a{
+    display: block;
+    padding: 10px 20px;
+    color: #999999;
+    font-size: 16px;
+    text-decoration: none;
+}
+.portal-feature .category-list ul li a span,
+.portal-hotdeal .category-list ul li a span{
+    display: block;
+    position: relative;
+}
+.portal-feature .category-list ul li a span:after,
+.portal-hotdeal .category-list ul li a span:after{
+    content: '';
+    display: none;
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -11px;
+    background: #999999;
+}
+.portal-hotdeal .category-list ul li.active a,
+.portal-hotdeal .category-list ul li.active a{
+    color: #666666;
+}
+.portal-feature .category-list ul li.active a span:after,
+.portal-hotdeal .category-list ul li.active a span:after{
+    display: block;
+}
+.portal-hotdeal .content{
+    background: #fff;
+    padding: 0 0 20px;
+    overflow: hidden;
+}
+.portal-hotdeal .content .big-banner img{
+    width: 100%;
+}
+.portal-hotdeal .content .banner-list{
+    margin-bottom: 0;
+    padding: 1px 0 0 1px;
+    margin-right: -2px;
+}
+.portal-hotdeal .content .banner-list:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.portal-hotdeal .content .banner-list li{
+    list-style: none;
+    float: left;
+    width: 50%;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+.portal-hotdeal .content .banner-list li a{
+    display: block;
+    border: 1px solid #ebebeb;
+}
+.portal-hotdeal .content .banner-list li img{
+    width: 100%;
+}
+.portal-feature .brand-list{
+    background: #ffffff;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 10px;
+    overflow-x: auto;
+    margin-top: 15px;
+}
+.portal-feature .brand-list ul{
+    padding-left: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+.portal-feature .brand-list ul li{
+    display: inline-block;
+    list-style: none;
+}
+.portal-feature .brand-list ul li a{
+    display: block;
+    width: 150px;
+    padding: 20px;
+}
+.portal-feature .brand-list ul li img{
+    width: 100%;
+}
+.amazon-header.ws-header-2 .auth-back-btn {
+    background: url("../img/base.png") no-repeat 13px -153px;
+}
+.amazon-cate{
+    background: #fff;
+}
+.categories .cate-header{
+    background: url("../img/amz-cate-bg.jpg") no-repeat;
+    background-size: cover;
+    padding: 20px 0;
+    margin-top: 5px;
+}
+.categories .cate-header .nav-tabs{
+    background: transparent;
+    border-bottom: none;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.categories .cate-header .nav-tabs li{
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+.categories .cate-header .nav-tabs li a{
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-weight: 300;
+    padding: 15px;
+}
+.categories .cate-header .nav-tabs li.active a{
+    font-weight: bold;
+}
+.categories .cate-content{
+    padding: 0 15px 20px;
+}
+.categories .cate-content ul{
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: -15px;
+}
+.categories .cate-content ul li{
+    list-style: none;
+}
+.categories .cate-content ul li a{
+    font-size: 16px;
+    font-weight: 300;
+    color: #666666;
+    display: block;
+    border: 1px solid #d9d9d9;
+    padding: 10px 35px 10px 15px;
+    margin-top: -1px;
+    background: #fff;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.categories .cate-content ul li .fa{
+    position: absolute;
+    top: 13px;
+    right: 15px;
+}
+.amazon-content .recently-view .title-3{
+    background: #fbfbfb;
+}
+.recently-view.detail .title{
+    background: #fff;
+    color: #333;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: none;
+}
+.addcart-notice{
+    padding: 30px 0;
+    text-align: center;
+}
+.addcart-notice .icon{}
+.addcart-notice .icon img{
+    /*width: 80%;*/
+}
+.addcart-notice .text{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 300;
+}

@@ -1,0 +1,198 @@
+/*Created by nktquan@gmail.com 4/14/16*/
+.login,.register,.forgot{
+    background: #fff;
+}
+.auth-bg{
+    height: 240px;
+    background: url("../img/auth-bg.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    padding-top: 60px;
+}
+.auth-bg .auth-back-btn{
+    display: block;
+    width: 52px;
+    height: 80px;
+    position: absolute;
+    font-size: 28px;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: url("../img/base.png") no-repeat 15px -153px;
+    z-index: 9;
+}
+.auth-nav {
+    position: relative;
+    margin-top: -56px;
+    z-index: 9;
+}
+.auth-nav ul{
+    padding-left: 0;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(254, 254, 254, 0.5);
+}
+.auth-nav ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.auth-nav ul li{
+    list-style: none;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.auth-nav ul li span,
+.auth-nav ul li a{
+    display: block;
+    padding: 12px 0;
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+}
+.forgot .auth-nav ul li{
+    float: none;
+    margin: auto;
+}
+.auth-nav ul li.active span{
+    border-bottom-color: #4dcbf2;
+}
+.auth-content{
+    padding: 30px 0;
+}
+.auth-content .login-form .form-control{
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid #e2e2e2;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    padding: 13px 20px;
+    font-size: 16px;
+    height: auto;
+    text-align: center;
+}
+.auth-content .login-form .form-control::-webkit-input-placeholder,
+.auth-content .login-form .form-control:-moz-placeholder,
+.auth-content .login-form .form-control::-moz-placeholder,
+.auth-content .login-form .form-control:-ms-input-placeholder{
+    text-align: center;
+}
+.auth-content .login-form .form-control:focus{
+    border-bottom-color: #2c95b5;
+}
+.auth-content .login-form .username .form-control{
+    width: 80%;
+    margin: auto;
+}
+.auth-content .login-form .password .form-control{
+    width: 60%;
+    margin: auto;
+}
+.auth-content .login-form .btn{
+    margin-top: 30px;
+}
+.auth-content .login-form .forgot{
+    margin-top: 10px;
+    text-align: center;
+}
+.auth-content .login-form .forgot a{
+    color: #666666;
+    text-decoration: none;
+}
+.auth-content .other-sign-in{
+    text-align: center;
+    margin-top: 100px;
+}
+.auth-content .other-sign-in .text{
+    display: inline-block;
+    vertical-align: middle;
+    color: #666666;
+}
+.auth-content .other-sign-in .text a{
+    font-weight: 700;
+    color: #333333;
+    text-decoration: none;
+}
+.auth-content .other-sign-in .btn{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.auth-content .register-form .form-control{
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    padding: 13px 20px;
+    font-size: 16px;
+    height: auto;
+}
+.auth-content .register-form .password{
+    position: relative;
+}
+.auth-content .register-form .password .form-control{
+    padding-right: 50px;
+}
+.auth-content .register-form .password .show-pw{
+    display: block;
+    width: 50px;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    cursor: pointer;
+    background: url("../img/base.png") no-repeat -51px -168px;
+}
+.auth-content .register-form .checkbox{
+    margin: 30px 0;
+}
+.auth-content .register-form .checkbox label{
+    padding-left: 0;
+    display: inline-block;
+    vertical-align: middle;
+    color: #999999;
+    font-size: 18px;
+}
+.auth-content .register-form .checkbox input[type=checkbox]{
+    display: none;
+}
+.auth-content .register-form .checkbox input[type=checkbox] + label{
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    height: 22px;
+    background: url("../img/base.png") no-repeat -134px -182px;
+    margin-right: 5px;
+}
+.auth-content .register-form .checkbox input[type=checkbox]:checked + label{
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    height: 22px;
+    background: url("../img/base.png") no-repeat -185px -182px;
+    margin-right: 5px;
+}
+.auth-content .forgot-form .form-control{
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    padding: 13px 20px;
+    font-size: 16px;
+    height: auto;
+}
+.auth-content .forgot-form p{
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 20px;
+}

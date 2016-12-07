@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from 'ng2-translate';
-// Import router directives
-// Deprecated
-// import { ROUTER_DIRECTIVES } from '@angular/router';
-
 
 @Component({
     selector: 'mobile-app',
@@ -16,8 +12,13 @@ export class AppComponent implements OnInit {
     constructor(private translate: TranslateService) { }
 
      ngOnInit() {
-        this.translate.addLangs(["en", "vn"]);
-        this.translate.setDefaultLang('en');
-        this.translate.use('en');
+        this.translate.addLangs(["en", "vn","home.vn","home.en"]);
+        if(window.location.hostname=='localhost'){
+            this.translate.setDefaultLang('home.vn');
+            this.translate.use('home.vn');
+        }else{
+            this.translate.setDefaultLang('home.en');
+            this.translate.use('home.en');
+        }
     }
 }

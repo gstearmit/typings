@@ -11,6 +11,7 @@ import { AmazonBox }        from'./model/amazon-box';
 export class AmazonBoxComponent {
     public dataImage: {};
     public uploadUrl:string;
+    public image:string;
     datas: AmazonBox[] = [];
     constructor(private amazonBoxService: AmazonBoxService) {
         this.getData();
@@ -22,6 +23,7 @@ export class AmazonBoxComponent {
         this.datas = res; 
         self.dataImage = this.datas.data.cms_block_data_image_banner;
         self.uploadUrl = this.datas.data.uploadUrl;
+        self.image = this.datas.data.image;
      });
     }
 }

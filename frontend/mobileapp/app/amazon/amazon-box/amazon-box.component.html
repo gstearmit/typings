@@ -4,12 +4,12 @@
         <span class="see-all">{{ 'HOME.SEEALL' | translate }}<i class="fa fa-chevron-right"></i></span>
     </a>
     <div class="content">
-        <!--<div class="big-banner wow fadeInUp" data-wow-delay="0.2s" *ngFor="let items of slider" >-->
-            <!--<a href="/">-->
-                <!--<span class="hide">{{items.id}}</span>-->
-                <!--<img src="{{items.src}}" alt="{{items.title}}" title="{{items.title}}"/>-->
-            <!--</a>-->
-        <!--</div>-->
+        <div class="big-banner wow fadeInUp" data-wow-delay="0.2s">
+            <a href="/">
+                <span class="hide"></span>
+                <img src="{{uploadUrl}}/{{image}}" alt="" title=""/>
+            </a>
+        </div>
         
         <ul class="banner-list">
             <li class="wow fadeInUp" data-wow-delay="0.2s" *ngFor="let items of dataImage">

@@ -4,7 +4,7 @@ import { Injectable }     from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { Slider }           from '../model/slider';
 import {Observable} from 'rxjs/Rx';
-
+import { contentHeaders } from './../../../enu/headers';
 // Import RxJs required methods
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -19,7 +19,7 @@ export class AmazonDetailImageService {
      // Fetch all existing comments
      getAmazonDetailImage() : Observable<Slider[]>{
          // ...using get request
-         return this.http.get(this.sliderUrl+'getamazondetailimages')
+         return this.http.get(this.sliderUrl+'getamazondetailimages',{ headers: contentHeaders })
                         // ...and calling .json() on the response to return data
                          .map((res:Response) => res.json())
                          //...errors if any

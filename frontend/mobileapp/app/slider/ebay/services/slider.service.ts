@@ -4,7 +4,7 @@ import { Injectable }     from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { Slider }           from '../model/slider';
 import {Observable} from 'rxjs/Rx';
-
+import { contentHeaders } from './../../../enu/headers';
 // Import RxJs required methods
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -18,10 +18,8 @@ export class EbayDetailImageService {
      
      // Fetch all existing comments
      getEbayDetailImage() : Observable<Slider[]>{
-         let headers = new Headers({ 'Content-Type': 'application/json' }); // ... Set content type to JSON
-         let options = new RequestOptions({ headers: headers });
          // ...using get request
-         return this.http.get(this.sliderUrl+'getebaydetailimages', options)
+         return this.http.get(this.sliderUrl+'getebaydetailimages', { headers: contentHeaders })
                         // ...and calling .json() on the response to return data
                          .map((res:Response) => res.json())
                          //...errors if any

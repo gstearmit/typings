@@ -23,10 +23,10 @@ import { AmazonDetailSliderComponent } from '../slider/amazon/amazon-detail-slid
 
 import { AmazonDetailImageService } from '../slider/amazon/services/slider.service';
 
-import { amazonRoutes } from './amazon.routes';
+import { AmazonRoutingModule } from './amazon.routes';
 
 @NgModule({
-    imports: [amazonRoutes,BrowserModule,InfiniteScrollModule,SwiperModule],
+    imports: [AmazonRoutingModule,BrowserModule,InfiniteScrollModule,SwiperModule],
     declarations: [
         AmazonComponent,
         AmazonNavComponent,

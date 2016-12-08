@@ -9,6 +9,7 @@ export const routes: Routes = [
 
   //{ path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '', redirectTo: 'global', pathMatch: 'full' },
+  { path: 'error', loadChildren: 'app/error-module/error.module#ErrorModule' },
   //{ path: '**', redirectTo: '/global/home' }
   //{ path: 'home', loadChildren: 'app/global-module/home/home.module#HomeModule' },
  // { path: 'ebay', loadChildren: 'app/ebay/ebay.module#EbayModule' },

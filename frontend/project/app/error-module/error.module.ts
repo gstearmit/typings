@@ -5,9 +5,8 @@ import { CommonModule }    from '@angular/common';
 //import { HttpModule, JsonpModule } from '@angular/http';
 import { errorRouting }   from './error.routes';
 
-import { ErrorComponent } from './error.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { InternalServerComponent } from './internal-server/internal-server.component';
+import { NotFoundComponent } from './component/not-found/not-found.component';
+import { InternalServerComponent } from './component/internal-server/internal-server.component';
 
 @NgModule({
     imports: [
@@ -15,7 +14,6 @@ import { InternalServerComponent } from './internal-server/internal-server.compo
         CommonModule,
     ],
     declarations: [
-        ErrorComponent,
         NotFoundComponent,
         InternalServerComponent
     ],

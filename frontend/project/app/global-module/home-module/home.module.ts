@@ -1,6 +1,6 @@
 // include module
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } 				from '@angular/core';
+import { CommonModule } 			from '@angular/common';
 import { homeRoutes } 				from './home.routes';
 import { ShareModule} 				from '../../share/share.module';
 import { SwiperModule } 			from 'angular2-useful-swiper';
@@ -15,18 +15,17 @@ import { HelpBuyComponent }         from './component/help-buy/help-buy.componen
 import { HotDealComponent }         from './component/hot-deal/hot-deal.component';
 import { AmazonBoxComponent } 		from './component/amazon-box/amazon-box.component';
 import { EbayBoxComponent }         from './component/ebay-box/ebay-box.component';
-// import { RecentlyViewComponent }    from './component/recently-view/recently-view.component';
-
-
-import { FormatPriceService }         from '../../services-common/format-price.service';
-
-import { BigSliderService } from './component/bigslider/services/big-slider.service';
-import { HotdealService }   from './component/hot-deal/services/hotdeal.service';
-import { AmazonBoxService } from './component/amazon-box/services/amazon-box.service';
-import { EbayBoxService }   from './component/ebay-box/services/ebay-box.service';
-// import { RecentlyviewService } from './component/recently-view/services/recentlyview.service';
+import { RecentlyViewComponent }    from './component/recently-view/recently-view.component';
 
 // include services
+import { FormatPriceService }       from '../../services-common/format-price.service';
+
+import { BigSliderService } 		from './component/bigslider/services/big-slider.service';
+import { HotdealService }   		from './component/hot-deal/services/hotdeal.service';
+import { AmazonBoxService } 		from './component/amazon-box/services/amazon-box.service';
+import { EbayBoxService }   		from './component/ebay-box/services/ebay-box.service';
+import { RecentlyviewService } 		from './component/recently-view/services/recentlyview.service';
+
 
 @NgModule({
 	// load module
@@ -47,7 +46,7 @@ import { EbayBoxService }   from './component/ebay-box/services/ebay-box.service
 		AmazonBoxComponent,
 		HotDealComponent,
 		EbayBoxComponent,
-		// RecentlyViewComponent
+		RecentlyViewComponent
 	],
 	// load all module,component to extend
 	exports: [
@@ -60,7 +59,7 @@ import { EbayBoxService }   from './component/ebay-box/services/ebay-box.service
 		AmazonBoxService,
 		EbayBoxService,
 		FormatPriceService,
-		// RecentlyviewService
+		RecentlyviewService
 	]
 })
 export class HomeModule { }

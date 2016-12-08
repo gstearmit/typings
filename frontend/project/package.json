@@ -45,5 +45,8 @@
     "systemjs": "0.19.39",
     "zone.js": "^0.6.25"
   },
-  "repository": {}
+  "repository": {},
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  }
 }

@@ -59,7 +59,12 @@ import { RecentlyviewService } 		from './component/recently-view/services/recent
 		AmazonBoxService,
 		EbayBoxService,
 		FormatPriceService,
+<<<<<<< HEAD
 		RecentlyviewService
+=======
+		BuyFromService,
+		// RecentlyviewService
+>>>>>>> a0c01b2289d29f52d7dd7f88ce2925989b3bb6d7
 	]
 })
 export class HomeModule { }

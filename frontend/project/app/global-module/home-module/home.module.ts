@@ -24,6 +24,7 @@ import { BigSliderService } from './component/bigslider/services/big-slider.serv
 import { HotdealService }   from './component/hot-deal/services/hotdeal.service';
 import { AmazonBoxService } from './component/amazon-box/services/amazon-box.service';
 import { EbayBoxService }   from './component/ebay-box/services/ebay-box.service';
+import { BuyFromService }   from './component/buy-from/services/buy-from.service';
 // import { RecentlyviewService } from './component/recently-view/services/recentlyview.service';
 
 // include services
@@ -60,6 +61,7 @@ import { EbayBoxService }   from './component/ebay-box/services/ebay-box.service
 		AmazonBoxService,
 		EbayBoxService,
 		FormatPriceService,
+		BuyFromService,
 		// RecentlyviewService
 	]
 })

@@ -8,9 +8,9 @@ export const routes: Routes = [
   // { path: '', component: AppComponent },
 
   //{ path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '', redirectTo: 'global', pathMatch: 'full' },
+  // { path: '', redirectTo: 'global', pathMatch: 'full' },
+  { path: '**', redirectTo: '/global/home' },
   { path: 'error', loadChildren: 'app/error-module/error.module#ErrorModule' },
-  //{ path: '**', redirectTo: '/global/home' }
   //{ path: 'home', loadChildren: 'app/global-module/home/home.module#HomeModule' },
  // { path: 'ebay', loadChildren: 'app/ebay/ebay.module#EbayModule' },
   // { path: 'amazon', loadChildren: 'app/amazon/amazon.module#AmazonModule' },

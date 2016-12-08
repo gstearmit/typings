@@ -1,8 +1,5 @@
 import { NgModule }        from '@angular/core';
-//import { BrowserModule }   from '@angular/platform-browser';
-
 import { CommonModule }    from '@angular/common';
-//import { HttpModule, JsonpModule } from '@angular/http';
 import { errorRouting }   from './error.routes';
 
 import { NotFoundComponent } from './component/not-found/not-found.component';

@@ -1,11 +1,12 @@
+// include module
 import { NgModule } from '@angular/core';
-//import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
-
+import { homeRoutes } 				from './home.routes';
+// import { ShareModule} 				from '../../share/share.module';
+import { SwiperModule } 			from 'angular2-useful-swiper';
 //import { InfiniteScrollModule } from 'angular2-infinite-scroll';
-import { SwiperModule } from 'angular2-useful-swiper';
-//<-- This one 
 
+// include component
 import { HomeComponent }            from './component/home/home.component';
 import { HeaderWeshopComponent }    from './component/header/header-weshop.component';
 import { BigSliderWeshopComponent } from './component/bigslider/big-slider-weshop.component';
@@ -25,18 +26,18 @@ import { AmazonBoxService } from './component/amazon-box/services/amazon-box.ser
 import { EbayBoxService }   from './component/ebay-box/services/ebay-box.service';
 // import { RecentlyviewService } from './component/recently-view/services/recentlyview.service';
 
-import { homeRoutes } from './home.routes';
-import { ShareModule} from '../../share/share.module';
+// include services
 
 @NgModule({
+	// load module
 	imports: [
 		homeRoutes,
-		// BrowserModule,
 		CommonModule,
-		//InfiniteScrollModule,
 		SwiperModule,
-		ShareModule
+		ShareModule,
+		//InfiniteScrollModule,
 	],
+	// load component
 	declarations: [
 		HomeComponent,
 		HeaderWeshopComponent,
@@ -48,9 +49,11 @@ import { ShareModule} from '../../share/share.module';
 		EbayBoxComponent,
 		// RecentlyViewComponent
 	],
+	// load all module,component to extend
 	exports: [
 		
 	],
+	// load service
 	providers: [
 		BigSliderService,
 		HotdealService,

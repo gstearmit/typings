@@ -14,12 +14,12 @@ export class EbayBoxService {
      // Resolve HTTP using the constructor
      constructor (private http: Http) {}
      // private instance variable to hold base url
-    private UrlApi = 'http://192.168.11.252:88/';
+    private UrlApi = 'http://192.168.11.252:88/block/getblock';
      
      // Fetch all existing comments
      getDataEbayBox() : Observable<EbayBox[]>{
          // ...using get request
-         return this.http.get(this.UrlApi+'getdataebaybox',{ headers: contentHeaders })
+         return this.http.get(this.UrlApi+'?pageName=mobile-home-page-vn&blockName=buy-from-ebay-mobile',{ headers: contentHeaders })
                         // ...and calling .json() on the response to return data
                          .map((res:Response) => res.json())
                          //...errors if any

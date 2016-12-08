@@ -14,7 +14,7 @@ import { HelpBuyComponent }         from './component/help-buy/help-buy.componen
 import { HotDealComponent }         from './component/hot-deal/hot-deal.component';
 import { AmazonBoxComponent } 		from './component/amazon-box/amazon-box.component';
 import { EbayBoxComponent }         from './component/ebay-box/ebay-box.component';
-import { RecentlyViewComponent }    from './component/recently-view/recently-view.component';
+// import { RecentlyViewComponent }    from './component/recently-view/recently-view.component';
 
 
 import { FormatPriceService }         from '../../services-common/format-price.service';
@@ -23,7 +23,7 @@ import { BigSliderService } from './component/bigslider/services/big-slider.serv
 import { HotdealService }   from './component/hot-deal/services/hotdeal.service';
 import { AmazonBoxService } from './component/amazon-box/services/amazon-box.service';
 import { EbayBoxService }   from './component/ebay-box/services/ebay-box.service';
-// import { RecentlyviewService } from '../component-common/recently-view/services/recentlyview.service';
+// import { RecentlyviewService } from './component/recently-view/services/recentlyview.service';
 
 import { homeRoutes } from './home.routes';
 import { ShareModule} from '../../share/share.module';
@@ -46,7 +46,7 @@ import { ShareModule} from '../../share/share.module';
 		AmazonBoxComponent,
 		HotDealComponent,
 		EbayBoxComponent,
-		RecentlyViewComponent
+		// RecentlyViewComponent
 	],
 	exports: [
 		
@@ -56,7 +56,8 @@ import { ShareModule} from '../../share/share.module';
 		HotdealService,
 		AmazonBoxService,
 		EbayBoxService,
-		FormatPriceService
+		FormatPriceService,
+		// RecentlyviewService
 	]
 })
 export class HomeModule { }

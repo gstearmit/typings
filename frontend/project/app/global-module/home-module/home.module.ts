@@ -15,7 +15,7 @@ import { HelpBuyComponent }         from './component/help-buy/help-buy.componen
 import { HotDealComponent }         from './component/hot-deal/hot-deal.component';
 import { AmazonBoxComponent } 		from './component/amazon-box/amazon-box.component';
 import { EbayBoxComponent }         from './component/ebay-box/ebay-box.component';
-import { RecentlyViewComponent }    from './component/recently-view/recently-view.component';
+//import { RecentlyViewComponent }    from './component/recently-view/recently-view.component';
 
 // include services
 import { FormatPriceService }       from '../../services-common/format-price.service';
@@ -24,7 +24,7 @@ import { BigSliderService } 		from './component/bigslider/services/big-slider.se
 import { HotdealService }   		from './component/hot-deal/services/hotdeal.service';
 import { AmazonBoxService } 		from './component/amazon-box/services/amazon-box.service';
 import { EbayBoxService }   		from './component/ebay-box/services/ebay-box.service';
-import { RecentlyviewService } 		from './component/recently-view/services/recentlyview.service';
+//import { RecentlyviewService } 		from './component/recently-view/services/recentlyview.service';
 
 
 @NgModule({
@@ -46,7 +46,7 @@ import { RecentlyviewService } 		from './component/recently-view/services/recent
 		AmazonBoxComponent,
 		HotDealComponent,
 		EbayBoxComponent,
-		RecentlyViewComponent
+		//RecentlyViewComponent
 	],
 	// load all module,component to extend
 	exports: [
@@ -59,12 +59,9 @@ import { RecentlyviewService } 		from './component/recently-view/services/recent
 		AmazonBoxService,
 		EbayBoxService,
 		FormatPriceService,
-<<<<<<< HEAD
-		RecentlyviewService
-=======
-		BuyFromService,
-		// RecentlyviewService
->>>>>>> a0c01b2289d29f52d7dd7f88ce2925989b3bb6d7
+		//RecentlyviewService,
+		//BuyFromService,
+
 	]
 })
 export class HomeModule { }

@@ -13,10 +13,13 @@ import 'rxjs/add/operator/catch';
 export class BuyFromService {
     constructor (private http: Http) {
     }
-    private sliderUrl = 'http://192.168.11.252:88/block/getblock';
+    private sliderUrl = 'http://192.168.11.252:88/homepage/';
     getBuyFrom() : Observable<BuyFrom[]>{
-        return this.http.get(this.sliderUrl+'?pageName=mobile-home-page-vn&blockName=brand-category-mobile',{ headers: contentHeaders })
+        return this.http.get(this.sliderUrl+'brandlist?domain=weshop.com.vn',{ headers: contentHeaders })
             .map((res:Response) => res.json())
             .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
+    }
+    public getItemByCategoryId(categoryId,dataCategoryId){
+        return dataCategoryId[categoryId];
     }
 }

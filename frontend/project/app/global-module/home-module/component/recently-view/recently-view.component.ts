@@ -1,6 +1,6 @@
 // Imports
 import { Component, OnInit } from '@angular/core';
-import { RecentlyviewService } from 'services/recentlyview.service';
+import { RecentlyviewService } from './services/recentlyview.service';
 @Component({
     moduleId: module.id,
     selector: 'recently-view',

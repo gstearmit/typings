@@ -1,15 +1,20 @@
 <div class="buy-from">
     <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" [ngClass]="{'active': active=='us'}"><a data-target="#us-store" role="tab" data-toggle="tab" (click)="tabClick('us')">{{ 'HOME.BUYFROM' | translate }} USA store</a></li>
-        <li role="presentation" [ngClass]="{'active': active=='cn'}"><a data-target="#cn-store" role="tab" data-toggle="tab" (click)="tabClick('cn')">{{ 'HOME.BUYFROM' | translate }} China store</a></li>
-        <li role="presentation" [ngClass]="{'active': active=='kr'}"><a data-target="#kr-store" role="tab" data-toggle="tab" (click)="tabClick('kr')">{{ 'HOME.BUYFROM' | translate }} Korea store</a></li>
+        <li role="presentation" *ngFor="let items of dataBuyFromTop" [ngClass]="{'active': active=='us'}">
+            <a data-target="#us-store" role="tab" data-toggle="tab" (click)="tabClick('us')">
+                <!--{{ 'HOME.BUYFROM' | translate }} USA store-->
+                {{items.categoryName}}
+            </a>
+        </li>
+        <!--<li role="presentation" [ngClass]="{'active': active=='cn'}"><a data-target="#cn-store" role="tab" data-toggle="tab" (click)="tabClick('cn')">{{ 'HOME.BUYFROM' | translate }} China store</a></li>-->
+        <!--<li role="presentation" [ngClass]="{'active': active=='kr'}"><a data-target="#kr-store" role="tab" data-toggle="tab" (click)="tabClick('kr')">{{ 'HOME.BUYFROM' | translate }} Korea store</a></li>-->
     </ul>
     <div class="tab-content">
         <div role="tabpanel" *ngIf="active=='us'" class="tab-pane active" id="us-store">
             <swiper [config]="brandUS">
                 <div class="swiper-wrapper brand-slider-us">
                     <div class="item swiper-slide" *ngFor="let items of dataBuyFromContent">
-                        <a href="{{items.linkTo}}"><img src="{{uploadUrl}}/{{items.linkImage}}" alt="{{items.name}}" title="{{items.name}}"/></a>
+                        <a href="{{ buyFromService.getItemByCategoryId(items.categoryId).linkTo }}"><img src="{{uploadUrl}}/{{ buyFromService.getItemByCategoryId(items.categoryId).linkImage }}" alt="{{ buyFromService.getItemByCategoryId(items.categoryId).name }}" title="{{ buyFromService.getItemByCategoryId(items.categoryId).name }}"/></a>
                     </div>
                     <!--<div class="item swiper-slide"><a href="/"><img src="app/common/img/brand/asics.png" alt="" title=""/></a></div>-->
                     <!--<div class="item swiper-slide"><a href="/"><img src="app/common/img/brand/diesel.png" alt="" title=""/></a></div>-->

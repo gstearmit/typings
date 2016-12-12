@@ -9,13 +9,13 @@ export class HomeComponent  {
 	constructor(private translate: TranslateService) { }
 
      ngOnInit() {
-        this.translate.addLangs(["en", "vn","home.vn","home.en"]);
-        if(window.location.hostname=='localhost'){
-            this.translate.setDefaultLang('home.vn');
-            this.translate.use('home.vn');
-        }else{
-            this.translate.setDefaultLang('home.en');
-            this.translate.use('home.en');
-        }
+        // this.translate.addLangs(["en", "vn","home.vn","home.en"]);
+        // if(window.location.hostname=='localhost'){
+        //     this.translate.setDefaultLang('home.vn');
+        //     this.translate.use('home.vn');
+        // }else{
+        //     this.translate.setDefaultLang('home.en');
+        //     this.translate.use('home.en');
+        // }
     }
 }

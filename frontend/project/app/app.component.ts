@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
             this.translate.use('home.en');
         }else{
             this.translate.setDefaultLang('home.en');
-           this.translate.use('home.en');
+            this.translate.use('home.en');
         }
     }
 }

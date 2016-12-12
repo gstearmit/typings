@@ -25,6 +25,8 @@ import { HotdealService }   		from './component/hot-deal/services/hotdeal.servic
 import { AmazonBoxService } 		from './component/amazon-box/services/amazon-box.service';
 import { EbayBoxService }   		from './component/ebay-box/services/ebay-box.service';
 import { RecentlyviewService } 		from './component/recently-view/services/recentlyview.service';
+import { BuyFromService } 		    from './component/buy-from/services/buy-from.service';
+
 
 
 @NgModule({
@@ -59,12 +61,8 @@ import { RecentlyviewService } 		from './component/recently-view/services/recent
 		AmazonBoxService,
 		EbayBoxService,
 		FormatPriceService,
-<<<<<<< HEAD
-		RecentlyviewService
-=======
-		BuyFromService,
-		// RecentlyviewService
->>>>>>> a0c01b2289d29f52d7dd7f88ce2925989b3bb6d7
+		RecentlyviewService,
+		BuyFromService
 	]
 })
 export class HomeModule { }

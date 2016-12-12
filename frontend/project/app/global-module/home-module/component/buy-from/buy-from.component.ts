@@ -12,7 +12,7 @@ export class BuyFromComponent implements OnInit {
     public active: string;
     public datas: BuyFrom[] = [];
     public dataBuyFromTop: {};
-    public dataBuyFromContent: {};
+    public dataBuyFromContent= [];
     public uploadUrl:string;
     brandUS: Object = {
         paginationClickable: true,
@@ -44,7 +44,12 @@ export class BuyFromComponent implements OnInit {
         this.buyFromService.getBuyFrom().subscribe(function (res) {
             this.datas = res;
             self.dataBuyFromTop    = this.datas.data.cms_block_data_category;
+            //console.log(self.dataBuyFromTop);
             self.dataBuyFromContent    = this.datas.data.cms_block_data_image_brand;
+            for (let key in this.datas.data.cms_block_data_image_brand) {
+                self.dataBuyFromContent.push(this.datas.data.cms_block_data_image_brand[key]);
+            }
+           // console.log(self.dataBuyFromContent)
             self.uploadUrl    = this.datas.data.uploadUrl;
         });
     }

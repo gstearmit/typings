@@ -2,7 +2,8 @@
     <swiper [config]="homeSlider">
         <div class="swiper-wrapper">
             <div class="item swiper-slide" *ngFor="let items of dataImage">
-			<a href="/"><img src="{{uploadUrl}}/{{items.linkImage}}" alt="{{items.name}}" title="{{items.name}}"/></a></div>
+			    <a href="/"><img src="{{uploadUrl}}/{{items.linkImage}}" alt="{{items.name}}" title="{{items.name}}"/></a>
+            </div>
         </div>
         <div class="swiper-pagination"></div>
     </swiper>

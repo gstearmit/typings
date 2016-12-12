@@ -13,12 +13,12 @@ import 'rxjs/add/operator/catch';
 export class AmazonBoxService {
     constructor (private http: Http) {
     }
-    private UrlApi = 'http://192.168.11.252:88/block/getblock';
+    private UrlApi = 'http://192.168.11.252:88/homepage/';
      
      // Fetch all existing comments
      getDataAmazonBox() : Observable<AmazonBox[]>{
          // ...using get request
-         return this.http.get(this.UrlApi+'?pageName=mobile-home-page-vn&blockName=buy-from-amazon-mobile',{headers:contentHeaders})
+         return this.http.get(this.UrlApi+'amazon?domain=weshop.com.vn',{headers:contentHeaders})
                         // ...and calling .json() on the response to return data
                          .map((res:Response) => res.json())
                          //...errors if any

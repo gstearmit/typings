@@ -15,7 +15,7 @@ import { HelpBuyComponent }         from './component/help-buy/help-buy.componen
 import { HotDealComponent }         from './component/hot-deal/hot-deal.component';
 import { AmazonBoxComponent } 		from './component/amazon-box/amazon-box.component';
 import { EbayBoxComponent }         from './component/ebay-box/ebay-box.component';
-import { RecentlyViewComponent }    from './component/recently-view/recently-view.component';
+//import { RecentlyViewComponent }    from './component/recently-view/recently-view.component';
 
 // include services
 import { FormatPriceService }       from '../../services-common/format-price.service';
@@ -26,8 +26,6 @@ import { AmazonBoxService } 		from './component/amazon-box/services/amazon-box.s
 import { EbayBoxService }   		from './component/ebay-box/services/ebay-box.service';
 import { RecentlyviewService } 		from './component/recently-view/services/recentlyview.service';
 import { BuyFromService } 		    from './component/buy-from/services/buy-from.service';
-
-
 
 @NgModule({
 	// load module
@@ -48,7 +46,7 @@ import { BuyFromService } 		    from './component/buy-from/services/buy-from.ser
 		AmazonBoxComponent,
 		HotDealComponent,
 		EbayBoxComponent,
-		RecentlyViewComponent
+		//RecentlyViewComponent
 	],
 	// load all module,component to extend
 	exports: [
@@ -61,8 +59,14 @@ import { BuyFromService } 		    from './component/buy-from/services/buy-from.ser
 		AmazonBoxService,
 		EbayBoxService,
 		FormatPriceService,
+<<<<<<< HEAD
 		RecentlyviewService,
 		BuyFromService
+=======
+		//RecentlyviewService,
+		//BuyFromService,
+
+>>>>>>> a6f95324f322b8a0c83198871f898c12b3676cc7
 	]
 })
 export class HomeModule { }

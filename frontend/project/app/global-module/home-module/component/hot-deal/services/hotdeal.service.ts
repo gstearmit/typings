@@ -15,10 +15,10 @@ export class HotdealService {
      // Resolve HTTP using the constructor
      constructor (private http: Http) {}
      // private instance variable to hold base url
-    private UrlApi = 'http://192.168.11.252:88/block/getblock';
+    private UrlApi = 'http://192.168.11.252:88/homepage/';
      // Fetch all existing comments
      getDataHotdeal() : Observable<Hotdeal[]>{
-         return this.http.get(this.UrlApi+'?pageId=34&blockName=category-product',{ headers: contentHeaders })
+         return this.http.get(this.UrlApi+'hotdeals?domain=weshop.com.vn',{ headers: contentHeaders })
                          .map((res:Response) => res.json())
                          .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
      }

@@ -13,9 +13,9 @@ import 'rxjs/add/operator/catch';
 export class BigSliderService {
     constructor (private http: Http) {
     }
-    private sliderUrl = 'http://192.168.11.252:88/block/getblock';
+    private sliderUrl = 'http://192.168.11.252:88/homepage/';
      getSliders() : Observable<BigSlider[]>{
-         return this.http.get(this.sliderUrl+'?pageId=53&blockName=header-alias-topstore1',{ headers: contentHeaders })
+         return this.http.get(this.sliderUrl+'slider?domain=weshop.com.vn',{ headers: contentHeaders })
                          .map((res:Response) => res.json())
                          .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
      }

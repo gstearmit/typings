@@ -48,7 +48,6 @@ export class BuyFromComponent implements OnInit {
             self.uploadUrl    = this.datas.data.uploadUrl;
         });
     }
-    getListItemSlideByCategoryId(id){
-        
-    }
+
+    
 }

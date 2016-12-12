@@ -59,14 +59,10 @@ import { BuyFromService } 		    from './component/buy-from/services/buy-from.ser
 		AmazonBoxService,
 		EbayBoxService,
 		FormatPriceService,
-<<<<<<< HEAD
 		RecentlyviewService,
 		BuyFromService
-=======
 		//RecentlyviewService,
 		//BuyFromService,
-
->>>>>>> a6f95324f322b8a0c83198871f898c12b3676cc7
 	]
 })
 export class HomeModule { }

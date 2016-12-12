@@ -1,11 +1,12 @@
-import { NgModule } from '@angular/core';
-//import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';
-
+// include module
+import { NgModule } 				from '@angular/core';
+import { CommonModule } 			from '@angular/common';
+import { homeRoutes } 				from './home.routes';
+import { ShareModule} 				from '../../share/share.module';
+import { SwiperModule } 			from 'angular2-useful-swiper';
 //import { InfiniteScrollModule } from 'angular2-infinite-scroll';
-import { SwiperModule } from 'angular2-useful-swiper';
-//<-- This one 
 
+// include component
 import { HomeComponent }            from './component/home/home.component';
 import { HeaderWeshopComponent }    from './component/header/header-weshop.component';
 import { BigSliderWeshopComponent } from './component/bigslider/big-slider-weshop.component';
@@ -16,27 +17,26 @@ import { AmazonBoxComponent } 		from './component/amazon-box/amazon-box.componen
 import { EbayBoxComponent }         from './component/ebay-box/ebay-box.component';
 import { RecentlyViewComponent }    from './component/recently-view/recently-view.component';
 
+// include services
+import { FormatPriceService }       from '../../services-common/format-price.service';
 
-import { FormatPriceService }         from '../../services-common/format-price.service';
+import { BigSliderService } 		from './component/bigslider/services/big-slider.service';
+import { HotdealService }   		from './component/hot-deal/services/hotdeal.service';
+import { AmazonBoxService } 		from './component/amazon-box/services/amazon-box.service';
+import { EbayBoxService }   		from './component/ebay-box/services/ebay-box.service';
+import { RecentlyviewService } 		from './component/recently-view/services/recentlyview.service';
 
-import { BigSliderService } from './component/bigslider/services/big-slider.service';
-import { HotdealService }   from './component/hot-deal/services/hotdeal.service';
-import { AmazonBoxService } from './component/amazon-box/services/amazon-box.service';
-import { EbayBoxService }   from './component/ebay-box/services/ebay-box.service';
-// import { RecentlyviewService } from '../component-common/recently-view/services/recentlyview.service';
-
-import { homeRoutes } from './home.routes';
-import { ShareModule} from '../../share/share.module';
 
 @NgModule({
+	// load module
 	imports: [
 		homeRoutes,
-		// BrowserModule,
 		CommonModule,
-		//InfiniteScrollModule,
 		SwiperModule,
-		ShareModule
+		ShareModule,
+		//InfiniteScrollModule,
 	],
+	// load component
 	declarations: [
 		HomeComponent,
 		HeaderWeshopComponent,
@@ -48,15 +48,23 @@ import { ShareModule} from '../../share/share.module';
 		EbayBoxComponent,
 		RecentlyViewComponent
 	],
+	// load all module,component to extend
 	exports: [
 		
 	],
+	// load service
 	providers: [
 		BigSliderService,
 		HotdealService,
 		AmazonBoxService,
 		EbayBoxService,
-		FormatPriceService
+		FormatPriceService,
+<<<<<<< HEAD
+		RecentlyviewService
+=======
+		BuyFromService,
+		// RecentlyviewService
+>>>>>>> a0c01b2289d29f52d7dd7f88ce2925989b3bb6d7
 	]
 })
 export class HomeModule { }

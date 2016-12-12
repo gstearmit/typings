@@ -3,9 +3,9 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routes';
-import { ShareModule} from './share/share.module';
 import { TranslateModule } from 'ng2-translate';
 import { GlobalModule } from './global-module/global.module';
+import { CommonSystemModule } from './common-module/common-system.module';
 
 
 @NgModule({
@@ -16,7 +16,8 @@ import { GlobalModule } from './global-module/global.module';
     AppRoutingModule,
     TranslateModule,
     // ShareModule,
-    GlobalModule
+    GlobalModule,
+    CommonSystemModule
   ],
   declarations: [
     AppComponent

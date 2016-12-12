@@ -1,5 +1,5 @@
 // Imports
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit }   from '@angular/core';
 import { RecentlyviewService } from './services/recentlyview.service';
 @Component({
     moduleId: module.id,
@@ -8,9 +8,18 @@ import { RecentlyviewService } from './services/recentlyview.service';
     providers: [RecentlyviewService]
 })
 export class RecentlyViewComponent {
-    public dataRecentlyView: {};
+    public datas: any = {};
     constructor(private recentlyviewService: RecentlyviewService) {
-        this.dataRecentlyView = this.recentlyviewService.getDataRecentlyView();
+       this.setData();
+    }
+    public setData(){
+        this.datas.id       = 1;
+        this.datas.src      = 'sdhdshshs';
+        this.datas.title    = 'heloo';
+        this.datas.price    = 50000;
+        this.datas.currency = 'vnd';
+        this.datas.sale     = 'sale';
+        this.recentlyviewService.create( this.datas);
     }
 
 }

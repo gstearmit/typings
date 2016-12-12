@@ -11,20 +11,21 @@ import { FormatPriceService } from '../../../../services-common/format-price.ser
 })
 
 export class EbayBoxComponent {
-    public listimage:{};
-    public slider:{};
-    datas: EbayBox[] = []
-    constructor(private ebayBoxService: EbayBoxService, public formatPriceService:FormatPriceService) {
+    public dataImage: {};
+    public uploadUrl:string;
+    public image:string;
+    datas: EbayBox[] = [];
+    constructor(private ebayBoxService: EbayBoxService) {
         this.getData();
     }
-   
+
     getData(){
-		//console.log(this.formatPriceService.getDefault(50000000000,1));
         let self = this;
         this.ebayBoxService.getDataEbayBox().subscribe(function (res) {
             this.datas = res;
-            self.listimage = this.datas.listimage;
-            self.slider    = this.datas.slider;
+            self.dataImage = this.datas.data.cms_block_data_image_banner;
+            self.uploadUrl = this.datas.data.uploadUrl;
+            self.image = this.datas.data.image;
         });
     }
 }

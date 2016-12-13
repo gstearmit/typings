@@ -8,16 +8,18 @@ import { ebayRouting } from './ebay.routes';
 
 import { EbayComponent } from './ebay.component';
 
+
 @NgModule({
     imports: [
         ebayRouting,
         //BrowserModule,
         CommonModule,
         ShareModule,
-        HomeModule
+        HomeModule,
+        // CommonSystemModule
     ],
     declarations: [
-        EbayComponent
+        EbayComponent,
     ],
     exports: [
 

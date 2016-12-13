@@ -8,7 +8,7 @@ export const routes: Routes = [
 
   //{ path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '', redirectTo: 'global', pathMatch: 'full' },
-  //{ path: 'ebay', redirectTo: 'ebay', pathMatch: 'full' },
+  { path: 'ebay', loadChildren: 'app/ebay-module/ebay.module#EbayModule' },
   //{ path: '**', redirectTo: '/global/home' },
   // { path: '', redirectTo: '/global/home' },
   { path: 'error', loadChildren: 'app/error-module/error.module#ErrorModule' },

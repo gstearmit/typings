@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-//import { NotFoundComponent } from './404/404.component';
 import { AppComponent } from './app.component';
 
 export const routes: Routes = [
 
-  { path: '', component: AppComponent },
+  //{ path: '', component: AppComponent },
 
   //{ path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '', redirectTo: 'global', pathMatch: 'full' },
-  { path: 'ebay', redirectTo: 'ebay', pathMatch: 'full' },
+  //{ path: 'ebay', redirectTo: 'ebay', pathMatch: 'full' },
   //{ path: '**', redirectTo: '/global/home' },
   // { path: '', redirectTo: '/global/home' },
   { path: 'error', loadChildren: 'app/error-module/error.module#ErrorModule' },

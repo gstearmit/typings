@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routes';
 import { TranslateModule } from 'ng2-translate';
 import { GlobalModule } from './global-module/global.module';
+import { EbayModule } from './ebay-module/ebay.module';
 import { CommonSystemModule } from './common-module/common-system.module';
 
 
@@ -17,6 +18,7 @@ import { CommonSystemModule } from './common-module/common-system.module';
     TranslateModule,
     // ShareModule,
     GlobalModule,
+    EbayModule,
     CommonSystemModule
   ],
   declarations: [

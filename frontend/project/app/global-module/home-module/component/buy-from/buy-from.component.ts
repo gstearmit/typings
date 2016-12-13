@@ -9,7 +9,7 @@ import { BuyFrom }        from './model/buy-from'
 })
 
 export class BuyFromComponent implements OnInit {
-    public active: string;
+    public active: number;
     public datas: BuyFrom[] = [];
     public dataBuyFromTop: {};
     public dataBuyFromContent= [];
@@ -32,24 +32,28 @@ export class BuyFromComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.active = 'us';
+        this.active = 0;
     }
 
     tabClick(index){
         this.active = index;
     }
+    isActive(categoryId){
+        if(this.active==categoryId){
+            return 'tab-pane active';
+        }else{
+            return 'tab-pane';
+        }
 
+    }
     getData(){
         let self = this;
         this.buyFromService.getBuyFrom().subscribe(function (res) {
             this.datas = res;
             self.dataBuyFromTop    = this.datas.data.cms_block_data_category;
-            //console.log(self.dataBuyFromTop);
-            self.dataBuyFromContent    = this.datas.data.cms_block_data_image_brand;
             for (let key in this.datas.data.cms_block_data_image_brand) {
                 self.dataBuyFromContent.push(this.datas.data.cms_block_data_image_brand[key]);
             }
-           // console.log(self.dataBuyFromContent)
             self.uploadUrl    = this.datas.data.uploadUrl;
         });
     }

@@ -1,23 +1,22 @@
 <div class="buy-from">
     <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" *ngFor="let items of dataBuyFromTop" [ngClass]="{'active': active=='us'}">
-            <a data-target="#us-store" role="tab" data-toggle="tab" (click)="tabClick('us')">
+        <li role="presentation" *ngFor="let items of dataBuyFromTop;let i = index" [ngClass]="{'active': active== i }">
+            <a data-target="#us-store" role="tab" data-toggle="tab" (click)="tabClick(i)">
                 <!--{{ 'HOME.BUYFROM' | translate }} USA store-->
                 {{items.categoryName}}
             </a>
         </li>
-        <!--<li role="presentation" [ngClass]="{'active': active=='cn'}"><a data-target="#cn-store" role="tab" data-toggle="tab" (click)="tabClick('cn')">{{ 'HOME.BUYFROM' | translate }} China store</a></li>-->
-        <!--<li role="presentation" [ngClass]="{'active': active=='kr'}"><a data-target="#kr-store" role="tab" data-toggle="tab" (click)="tabClick('kr')">{{ 'HOME.BUYFROM' | translate }} Korea store</a></li>-->
     </ul>
     <div class="tab-content">
-        <div role="tabpanel"  *ngFor="let items of dataBuyFromContent"  class="tab-pane active" >
+        <div role="tabpanel"  *ngFor="let itemss of dataBuyFromContent;  let i = index"  class="{{isActive(i)}}" >
             <swiper [config]="brandUS">
                 <div class="swiper-wrapper brand-slider-kr">
-                    <div class="item swiper-slide" *ngFor="let dataItem of items" ><a href="{{dataItem.linkTo}}"><img src="{{uploadUrl}}/{{dataItem.linkImage}}" alt="{{dataItem.name}}" title="{{dataItem.name}}"/></a></div>
+                    <div class="item swiper-slide" *ngFor="let dataItem of itemss" ><a href="{{dataItem.linkTo}}"><img src="{{uploadUrl}}/{{dataItem.linkImage}}" alt="{{dataItem.name}}" title="{{dataItem.name}}"/></a></div>
                 </div>
             </swiper>
             <div class="see-all">
                 <a href="/">{{ 'HOME.SEEBRAND' | translate }} <i class="fa fa-chevron-right"></i></a>
             </div>
         </div>
+     </div>   
 </div>

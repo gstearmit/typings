@@ -4,7 +4,7 @@ import { CommonModule } 			from '@angular/common';
 import { homeRoutes } 				from './home.routes';
 import { ShareModule} 				from '../../share/share.module';
 import { SwiperModule } 			from 'angular2-useful-swiper';
-//import { InfiniteScrollModule } from 'angular2-infinite-scroll';
+import { InfiniteScrollModule } from 'angular2-infinite-scroll';
 
 // include component
 import { HomeComponent }            from './component/home/home.component';
@@ -34,7 +34,7 @@ import { BuyFromService } 		    from './component/buy-from/services/buy-from.ser
 		CommonModule,
 		SwiperModule,
 		ShareModule,
-		//InfiniteScrollModule,
+		InfiniteScrollModule,
 	],
 	// load component
 	declarations: [

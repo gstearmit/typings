@@ -5,13 +5,11 @@ import { Component, OnInit } from '@angular/core';
 	selector: 'mobile-app',
 	templateUrl: 'global.component.html',
     providers: [
-    // TranslateService
   ],
 })
 export class GlobalComponent implements OnInit {
     constructor() { }
-
-     ngOnInit() {
+    ngOnInit() {
        
     }
 }

@@ -1,12 +1,15 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule }  from '@angular/platform-browser';
+import { NgModule }           from '@angular/core';
+import { BrowserModule }      from '@angular/platform-browser';
 import { HttpModule, JsonpModule } from '@angular/http';
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app.routes';
-import { TranslateModule } from 'ng2-translate';
-import { GlobalModule } from './global-module/global.module';
-//import { EbayModule } from './ebay-module/ebay.module';
+import { TranslateModule }    from 'ng2-translate';
+import { GlobalModule }       from './global-module/global.module';
 import { CommonSystemModule } from './common-module/common-system.module';
+// import { ShareModule }        from './share/share.module';
+import { AppRoutingModule }   from './app.routes';
+
+import { TranslateService } from 'ng2-translate';
+import { AppComponent }       from './app.component';
+
 
 
 @NgModule({
@@ -18,7 +21,6 @@ import { CommonSystemModule } from './common-module/common-system.module';
     TranslateModule,
     // ShareModule,
     GlobalModule,
-    //EbayModule,
     CommonSystemModule
   ],
   declarations: [

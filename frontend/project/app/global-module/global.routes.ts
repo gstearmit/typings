@@ -14,7 +14,7 @@ import { GlobalComponent } from './global.component';
   //   loadChildren: () => System.import('./register/register.module')
   // },
   {
-    path: 'global',component: GlobalComponent,
+    path: '',component: GlobalComponent,
     children: [
      { path: '', redirectTo: 'home', pathMatch: 'full' },
     //  { path: 'home', loadChildren: './app/global-module/home-module/home.module#HomeModule' },

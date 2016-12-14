@@ -13,7 +13,7 @@ import 'rxjs/add/operator/catch';
 export class BuyFromService {
     constructor (private http: Http) {
     }
-    private sliderUrl = 'http://192.168.11.252:88/homepage/';
+    private sliderUrl = 'http://192.168.11.252:88/common/homepage/';
     getBuyFrom() : Observable<BuyFrom[]>{
         return this.http.get(this.sliderUrl+'brandlist?domain=weshop.com.vn',{ headers: contentHeaders })
             .map((res:Response) => res.json())

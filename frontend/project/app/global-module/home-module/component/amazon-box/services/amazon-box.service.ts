@@ -13,7 +13,7 @@ import 'rxjs/add/operator/catch';
 export class AmazonBoxService {
     constructor (private http: Http) {
     }
-    private UrlApi = 'http://192.168.11.252:88/homepage/';
+    private UrlApi = 'http://192.168.11.252:88/common/homepage/';
      
      // Fetch all existing comments
      getDataAmazonBox() : Observable<AmazonBox[]>{

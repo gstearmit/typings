@@ -15,7 +15,7 @@ export class HotdealService {
      // Resolve HTTP using the constructor
      constructor (private http: Http) {}
      // private instance variable to hold base url
-    private UrlApi = 'http://192.168.11.252:88/homepage/';
+    private UrlApi = 'http://192.168.11.252:88/common/homepage/';
      // Fetch all existing comments
      getDataHotdeal() : Observable<Hotdeal[]>{
          return this.http.get(this.UrlApi+'hotdeals?domain=weshop.com.vn',{ headers: contentHeaders })

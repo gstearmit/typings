@@ -11,7 +11,5 @@ export class HomeComponent  {
     ngOnInit() {
        
     }
-    // onScroll () {
-    //     console.log('scrolled!!')
-    // }
+   
 }

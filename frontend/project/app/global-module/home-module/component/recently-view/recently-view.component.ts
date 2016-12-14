@@ -10,16 +10,19 @@ import { RecentlyviewService } from './services/recentlyview.service';
 export class RecentlyViewComponent {
     public datas: any = {};
     constructor(private recentlyviewService: RecentlyviewService) {
-       this.setData();
+       this.getData();
     }
     public setData(){
         this.datas.id       = 1;
-        this.datas.src      = 'sdhdshshs';
-        this.datas.title    = 'heloo';
+        this.datas.src      = 'http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/ywwAAOSwZG9Wi~mT/$_1.JPG';
+        this.datas.title    = 'Product test';
         this.datas.price    = 50000;
-        this.datas.currency = 'vnd';
+        this.datas.currency = 'VND';
         this.datas.sale     = 'sale';
-        this.recentlyviewService.create( this.datas);
+        this.recentlyviewService.create(this.datas);
+    }
+    public getData(){
+        this.datas = this.recentlyviewService.getAll();
     }
 
 }

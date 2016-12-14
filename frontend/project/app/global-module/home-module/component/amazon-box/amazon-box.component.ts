@@ -12,9 +12,10 @@ export class AmazonBoxComponent {
     public dataImage: {};
     public uploadUrl:string;
     public image:string;
+    public flag:boolean;
     datas: AmazonBox[] = [];
     constructor(private amazonBoxService: AmazonBoxService) {
-        this.getData();
+        //this.getData();
     }
 
     getData(){
@@ -24,6 +25,12 @@ export class AmazonBoxComponent {
         self.dataImage = this.datas.data.cms_block_data_image_banner;
         self.uploadUrl = this.datas.data.uploadUrl;
         self.image = this.datas.data.image;
+        self.flag =true;
      });
+    }
+    onScroll () {
+        if(!this.flag){
+            this.getData();
+        } 
     }
 }

@@ -15,8 +15,9 @@ export class EbayBoxComponent {
     public uploadUrl:string;
     public image:string;
     datas: EbayBox[] = [];
+    public flag:boolean;
     constructor(private ebayBoxService: EbayBoxService) {
-        this.getData();
+        //this.getData();
     }
 
     getData(){
@@ -26,6 +27,12 @@ export class EbayBoxComponent {
             self.dataImage = this.datas.data.cms_block_data_image_banner;
             self.uploadUrl = this.datas.data.uploadUrl;
             self.image = this.datas.data.image;
+            self.flag =true;
         });
+    }
+    onScroll () {
+        if(!this.flag){
+            this.getData();
+        } 
     }
 }

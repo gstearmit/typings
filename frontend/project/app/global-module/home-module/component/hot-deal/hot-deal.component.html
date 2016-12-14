@@ -1,8 +1,9 @@
 <div class="hot-deal"
             infinite-scroll
-            [infiniteScrollDistance]="1"
+            [infiniteScrollDistance]="2"
             [infiniteScrollThrottle]="500"
             (scrolled)="onScroll()"
+            [scrollWindow]="true"
 >
     <div class="title wow slideInUp" data-wow-delay="0.2s">
         <strong>{{ 'HOME.HOTDEALS' | translate }}</strong>

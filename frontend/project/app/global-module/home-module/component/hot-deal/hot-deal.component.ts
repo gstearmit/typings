@@ -13,8 +13,8 @@ export class HotDealComponent  {
 	public dataHotDeal:{};
     public datas: Hotdeal[] = [];
     public uploadUrl:string;
+    public flag:boolean;
     constructor(private hotdealService: HotdealService, public formatPriceService:FormatPriceService) {
-        this.onScroll ();
     }
   
     getHotDeal(){
@@ -23,10 +23,13 @@ export class HotDealComponent  {
             this.datas = res;
             self.dataHotDeal    = this.datas.data.cms_block_data_product.data;
             self.uploadUrl      = this.datas.data.uploadUrl;
+            self.flag =true;
 			//console.log(self.dataHotDeal);
         });
     }
     onScroll () {
-         this.getHotDeal();
+        if(!this.flag){
+            this.getHotDeal();
+        } 
     }
 }

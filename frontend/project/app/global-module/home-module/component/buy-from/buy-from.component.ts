@@ -54,6 +54,7 @@ export class BuyFromComponent implements OnInit {
             for (let key in this.datas.data.cms_block_data_image_brand) {
                 self.dataBuyFromContent.push(this.datas.data.cms_block_data_image_brand[key]);
             }
+            //console.log(self.dataBuyFromContent);
             self.uploadUrl    = this.datas.data.uploadUrl;
         });
     }

@@ -11,7 +11,7 @@
         <div role="tabpanel"  *ngFor="let itemss of dataBuyFromContent;  let i = index"  class="{{isActive(i)}}" >
             <swiper [config]="brandUS">
                 <div class="swiper-wrapper brand-slider-kr">
-                    <div class="item swiper-slide" *ngFor="let dataItem of itemss" ><a href="{{dataItem.linkTo}}"><img src="{{uploadUrl}}/{{dataItem.linkImage}}" alt="{{dataItem.name}}" title="{{dataItem.name}}"/></a></div>
+                    <div class="item swiper-slide" *ngFor="let dataItem of itemss" > <a [routerLink]="['/ebay', dataItem.categoryId]"><img src="{{uploadUrl}}/{{dataItem.linkImage}}" alt="{{dataItem.name}}" title="{{dataItem.name}}"/></a></div>
                 </div>
             </swiper>
             <div class="see-all">

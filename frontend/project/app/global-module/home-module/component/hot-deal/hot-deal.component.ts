@@ -14,7 +14,7 @@ export class HotDealComponent  {
     public datas: Hotdeal[] = [];
     public uploadUrl:string;
     constructor(private hotdealService: HotdealService, public formatPriceService:FormatPriceService) {
-        this.getHotDeal();
+        this.onScroll ();
     }
   
     getHotDeal(){
@@ -22,8 +22,11 @@ export class HotDealComponent  {
         this.hotdealService.getDataHotdeal().subscribe(function (res) {
             this.datas = res;
             self.dataHotDeal    = this.datas.data.cms_block_data_product.data;
-            self.uploadUrl    = this.datas.data.uploadUrl;
+            self.uploadUrl      = this.datas.data.uploadUrl;
 			//console.log(self.dataHotDeal);
         });
+    }
+    onScroll () {
+         this.getHotDeal();
     }
 }

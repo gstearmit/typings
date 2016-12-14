@@ -19,7 +19,8 @@ import { EbayRecommendationComponent } from './component/ebay-recommendation/eba
 import { EbayFootcateComponent } from './component/ebay-foot-cate/ebay-foot-cate.component';
 
 // include services
-
+import { EbayBannerService } from './component/ebay-banner/service/ebay-banner.service';
+import { EbayHotdealService } from './component/ebay-hotdeal/service/ebay-hotdeal.service';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { EbayFootcateComponent } from './component/ebay-foot-cate/ebay-foot-cate
     ],
     // load service
     providers: [
-
+        EbayBannerService,
+        EbayHotdealService
     ]
 })
 export class HomeModule { }

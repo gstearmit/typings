@@ -1,5 +1,7 @@
 // Imports
 import { Component, OnInit } from '@angular/core';
+import { EbayHotDeal } from './model/ebay-hotdeal';
+import { EbayHotdealService } from './service/ebay-hotdeal.service';
 @Component({
     moduleId: module.id,
     selector: 'ebay-hotdeal',
@@ -7,7 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 // Component class implementing OnInit
 export class EbayHotdealComponent implements OnInit {
+    public datas : EbayHotDeal[] = [];
     // Private property for binding
     // Load data ones componet is ready
-    ngOnInit() {}
+    constructor(private ebayHotDealService : EbayHotdealService){
+    }
+    ngOnInit() {
+        this.getData();
+    }
+    getData(){
+        this.ebayHotDealService.getBannerCategory().subscribe(
+                data => {this.datas = data},
+                err => console.error(err),
+            () => console.log('done')
+        );
+    }
 }

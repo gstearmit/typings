@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import { ShareModule } from '../share/share.module';
 import { HomeModule } from './home-module/home.module';
 import { ebayRouting } from './ebay.routes';
-
 import { EbayComponent } from './ebay.component';
 
 
@@ -25,7 +24,6 @@ import { EbayComponent } from './ebay.component';
 
     ],
     providers: [
-
     ]
 })
 export class EbayModule { }

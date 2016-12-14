@@ -1,9 +1,10 @@
-import { NgModule } from '@angular/core';
-import { LeftMenuComponent } from './component/left-menu/left-menu.component';
+import { NgModule }            from '@angular/core';
+import { CommonModule }        from '@angular/common';
+import { LeftMenuComponent }   from './component/left-menu/left-menu.component';
 
 @NgModule({
 	imports: [
-
+		CommonModule
 	],
 	providers: [
 
@@ -12,6 +13,7 @@ import { LeftMenuComponent } from './component/left-menu/left-menu.component';
 		LeftMenuComponent
 	],
 	exports: [
+		CommonModule,
 		LeftMenuComponent
 	]
 })

@@ -1,13 +1,12 @@
-AngularJS and Yii2 Part 2: Authentication
-================================
+## Scotch Angular Component Router Tutorial Demo
 
-If you're planning on running these on your server don't forget to:
-~~~
-php composer.phar install
-~~~
-and initialize the environment
-~~~
-php init
-~~~
+This is a demo to support a Scotch article. Read the article alongside with playing with the demo for better understanding.
 
-The tutorial is located here [Neat Tutorials](http://blog.neattutorials.com/angularjs-and-yii2-part-2-authentication/)
+To run, clone the demo and run:
+
+```bash
+# Install dependncies
+npm install
+# Start app
+npm start
+```

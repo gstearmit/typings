@@ -1,8 +1,0 @@
-<div class="ebay-detail-slider">
-    <swiper [config]="ebayDetailSlider">
-        <div class="swiper-wrapper">
-            <div class="item swiper-slide" *ngFor="let items of dataSlider | async"><a href="/"><img src="{{items.src}}" alt="{{items.title}}" title="{{items.title}}"/></a></div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </swiper>
-</div>
